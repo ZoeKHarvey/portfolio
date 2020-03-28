@@ -1,5 +1,5 @@
 import React from 'react';
-import Sidebar from './Components/Sidebar/Sidebar';
+import Home from './Components/Home/Home';
 import Header from './Components/Header/Header'
 import './App.scss';
 
@@ -7,7 +7,7 @@ function App() {
   return (
     <div className="App">
       <Header />
-     <Sidebar />
+     <Home />
     </div>
   );
 }

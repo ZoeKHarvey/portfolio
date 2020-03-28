@@ -1,11 +1,22 @@
+//on hover make all OTHER tabs darker?
 
+$box-shadow1: 0px 6px 13px 0px rgba(0,0,0,0.75);
+$darker-grey: rgba(112, 112, 112, .7);
+$lighter-grey: rgba(148, 148, 148, 1);
 
 .Header {
+  display: flex;
   margin: 0;
-  box-shadow: 0px 6px 13px 0px rgba(0,0,0,0.75);
+  box-shadow: $box-shadow1;
+  color: $darker-grey;
+  padding-left: 2%;
+  justify-content: space-evenly;
 }
 
-h1 {
-  margin: 0;
 
+.header-tab {
+  &:hover {
+    color: $lighter-grey;
+    cursor: pointer;
+  }
 }

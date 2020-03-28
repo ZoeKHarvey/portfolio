@@ -6,7 +6,10 @@ const Header = () => {
 
   return(
     <div className="Header">
-      <h1>Header</h1>
+      <p className="header-tab">Projects & Portfolio</p>
+      <p className="header-tab">About Me</p>
+      <p className="header-tab">Resume</p>
+      <p className="header-tab">Contact</p>
     </div>
   )
 }
