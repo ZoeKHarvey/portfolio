@@ -1,0 +1,25 @@
+$lighter-grey: rgba(148, 148, 148, 1);
+$secondary-blue: #49d7ed;
+
+h1 {
+  margin: 0%;
+  font-size: 6em;
+  // margin-bottom: 2vh;
+}
+
+.home__div--name {
+  margin-left: 15%;
+  margin-top: 17vh;
+  color: $lighter-grey;
+}
+
+.home__p--about {
+  padding-top: 2vh;
+  font-size: 1.3em;
+}
+
+span {
+  color: $secondary-blue;
+  font-weight: bold;
+}
+

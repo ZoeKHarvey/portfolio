@@ -18,5 +18,7 @@ $lighter-grey: rgba(148, 148, 148, 1);
   &:hover {
     color: $lighter-grey;
     cursor: pointer;
+    // text-decoration: underline;
+    border-bottom: 1px solid #49d7ed
   }
 }
