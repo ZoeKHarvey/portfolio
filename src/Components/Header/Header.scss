@@ -21,7 +21,7 @@ $lighter-grey: rgba(148, 148, 148, 1);
     // padding: 5px;
     cursor: pointer;
     // text-decoration: underline;
-    border-bottom: 1px solid #49d7ed;
+    // border-bottom: 1px solid #49d7ed;
     // padding: 5px;
     // transform: translateX(200px) translateY(-4px) translateZ(6px) scale(0.3);
   }
@@ -33,9 +33,9 @@ $animate: all 0.2s ease-in-out;
   display: flex;
   flex-flow: row nowrap;
   align-items: center;
-  margin: 0 0 45px;
+  margin: 18px 0 20px;
   .header-tab {
-    font-size: 36px;
+    font-size: 1.2em;
     text-align: center;
     margin: 0 auto;
     padding: 0;
@@ -47,12 +47,12 @@ $animate: all 0.2s ease-in-out;
       position: absolute;
       bottom: -10px;
       width: 0px;
-      height: 5px;
+      height: 2px;
       margin: 5px 0 0;
       transition: $animate;
       transition-duration: 0.75s;
       opacity: 0;
-      background-color: darken(orange,5%);
+      background-color: darken(#49d7ed, 5%);
     }
     &.header-tab {
       &:before,
