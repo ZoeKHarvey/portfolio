@@ -6,11 +6,23 @@ const Header = () => {
 
   return(
     <div className="Header">
-      <p className="header-tab">Projects & Portfolio</p>
-      <p className="header-tab">About Me</p>
-      <p className="header-tab">Resume</p>
-      <p className="header-tab">Contact</p>
-    </div>
+
+      <div className="header">
+        <p className="header-tab">Projects & Portfolio</p>
+      </div>
+      
+      <div className="header">
+        <p className="header-tab">About Me</p>
+      </div>
+
+      <div className="header">
+        <p className="header-tab">Resume</p>
+      </div>
+
+      <div className="header">
+        <p className="header-tab">Contact</p>
+      </div>
+  </div>
   )
 }
 
