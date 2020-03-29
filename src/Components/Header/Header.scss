@@ -15,10 +15,60 @@ $lighter-grey: rgba(148, 148, 148, 1);
 
 
 .header-tab {
+  border-bottom: 1px solid #202020;
   &:hover {
     color: $lighter-grey;
+    // padding: 5px;
     cursor: pointer;
     // text-decoration: underline;
-    border-bottom: 1px solid #49d7ed
+    border-bottom: 1px solid #49d7ed;
+    // padding: 5px;
+    // transform: translateX(200px) translateY(-4px) translateZ(6px) scale(0.3);
+  }
+}
+$animate: all 0.2s ease-in-out;
+
+
+.Header {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  margin: 0 0 45px;
+  .header-tab {
+    font-size: 36px;
+    text-align: center;
+    margin: 0 auto;
+    padding: 0;
+    transition: $animate;
+    position: relative;
+    &:before,
+    &:after {
+      content: "";
+      position: absolute;
+      bottom: -10px;
+      width: 0px;
+      height: 5px;
+      margin: 5px 0 0;
+      transition: $animate;
+      transition-duration: 0.75s;
+      opacity: 0;
+      background-color: darken(orange,5%);
+    }
+    &.header-tab {
+      &:before,
+      &:after {
+        left: 0;
+      }
+    }
+    }
+  &:hover {
+    cursor: pointer;
+    .header-tab {
+      &:before,
+      &:after {
+        width: 100%;
+        opacity: 1;
+      }
+    }
   }
 }
