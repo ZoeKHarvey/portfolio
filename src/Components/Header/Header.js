@@ -20,9 +20,11 @@ const Header = () => {
         </div>
       </Link>
 
-      <div className="header">
-        <p className="header-tab">Resume</p>
-      </div>
+      <Link to='/resume'>
+        <div className="header">
+          <p className="header-tab">Resume</p>
+        </div>
+      </Link>
 
       <div className="header">
         <p className="header-tab">Contact</p>
