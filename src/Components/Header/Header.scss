@@ -10,7 +10,12 @@ $lighter-grey: rgba(148, 148, 148, 1);
   box-shadow: $box-shadow1;
   color: $darker-grey;
   padding-left: 2%;
+}
+
+.Header2 {
+  display: flex;
   justify-content: space-evenly;
+  width: 100%;
 }
 
 
@@ -70,5 +75,20 @@ $animate: all 0.2s ease-in-out;
         opacity: 1;
       }
     }
+  }
+}
+
+.header-logo {
+  display: block;
+  height: 8vh;
+  width: 6em;
+  background-image: url('../../assets/logo-grey.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 60%;
+  &:hover {
+    opacity: .7;
+    background-image: url('../../assets/porfolio-logo-blue.png');
+    cursor: pointer;
   }
 }

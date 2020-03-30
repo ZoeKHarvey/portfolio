@@ -1,13 +1,20 @@
 import React from 'react';
 import './Header.scss';
-import {Link} from 'react-router-dom';
+import {Link, NavLink} from 'react-router-dom';
 
 const Header = () => {
 
 
   return(
-    <div className="Header">
 
+    <div className="Header">
+      <Link to='/'>
+      <span className="header-logo">
+      </span>
+
+      </Link>
+<div className="Header2">
+   
       <Link to='/projects'>
         <div className="header">
           <p className="header-tab">Projects & Portfolio</p>
@@ -31,6 +38,7 @@ const Header = () => {
           <p className="header-tab">Contact</p>
         </div>
       </Link>
+      </div>
   </div>
   )
 }
