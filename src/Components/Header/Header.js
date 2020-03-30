@@ -8,15 +8,17 @@ const Header = () => {
   return(
     <div className="Header">
 
-    <Link to='/projects'>
-      <div className="header">
-        <p className="header-tab">Projects & Portfolio</p>
-      </div>
+      <Link to='/projects'>
+        <div className="header">
+          <p className="header-tab">Projects & Portfolio</p>
+        </div>
       </Link>
       
-      <div className="header">
-        <p className="header-tab">About Me</p>
-      </div>
+      <Link to='/about'>
+        <div className="header">
+          <p className="header-tab">About Me</p>
+        </div>
+      </Link>
 
       <div className="header">
         <p className="header-tab">Resume</p>

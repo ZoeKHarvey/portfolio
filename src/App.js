@@ -2,7 +2,8 @@ import React from 'react';
 import { Route } from 'react-router-dom';
 import Home from './Components/Home/Home';
 import Header from './Components/Header/Header';
-import Projects from './Components/Projects/Projects'
+import Projects from './Components/Projects/Projects';
+import About from './Components/About/About';
 import './App.scss';
 
 
@@ -12,6 +13,7 @@ function App() {
       <Header />
       <Route exact path='/' render = {() => <> <Home /> </>} />
       <Route exact path='/projects' render = {() => <> <Projects /> </>} />
+      <Route exact path='/about' render = {() => <> <About /> </>} />
     </div>
   );
 }
