@@ -4,6 +4,7 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
+  height: 91vh;
 }
 
 .cowboy-div {
@@ -20,7 +21,7 @@
 .svg-next {
 
   &:hover {
-    fill: #49d7ed;
+    fill: rgba(148, 148, 148, .7);
     cursor: pointer;
   }
 }

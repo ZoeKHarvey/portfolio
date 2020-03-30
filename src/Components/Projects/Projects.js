@@ -39,10 +39,13 @@ render() {
     <div className="Projects">
 
       <div className="projects-div gutenreader-div">
-      <svg className="svg-next" onClick={ () => this.toggleImageSrc(1) } xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24"><path d="M5.88 4.12L13.76 12l-7.88 7.88L8 22l10-10L8 2z"/><path d="M0 0h24v24H0z" fill="none"/></svg>
-        {/* <button onClick={ () => this.toggleImageSrc(1) }>Next</button> */}
+      {/* <svg className="svg-next" onClick={ () => this.toggleImageSrc(1) } xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24"><path d="M5.88 4.12L13.76 12l-7.88 7.88L8 22l10-10L8 2z"/><path d="M0 0h24v24H0z" fill="none"/></svg> */}
+      <div style={{display: 'flex', height: '80vh', width: '80%'}}> 
         <CrossfadeImage src={this.state.imageSrc1} />
+        <svg className="svg-next" onClick={ () => this.toggleImageSrc(1) } xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24"><path d="M5.88 4.12L13.76 12l-7.88 7.88L8 22l10-10L8 2z"/><path d="M0 0h24v24H0z" fill="none"/></svg>
+        </div>
         <a href="https://github.com/ZoeKHarvey/guten_reader_FE">Github</a>
+
       </div>
 
 
