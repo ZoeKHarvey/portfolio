@@ -4,22 +4,35 @@ import CowboyAlienHome from '../../assets/cowboysaliens.png';
 import CowboysAliens2 from '../../assets/cowboysaliens2.png';
 import CrossfadeImage from 'react-crossfade-image';
 import gutenGIF from '../../assets/gutenreader.gif';
+import gutenHome from '../../assets/gutenhome.png';
 
 class Projects extends Component {
   constructor() {
     super()
     this.state = {
-      imageSrc: CowboyAlienHome
+      imageSrc1: gutenHome,
+      imageSrc2: CowboyAlienHome
     }
   }
 
-  toggleImageSrc = () => {
-    if(this.state.imageSrc === CowboyAlienHome) {
-      this.setState({ imageSrc: CowboysAliens2 })
-    } else {
-      this.setState({ imageSrc: CowboyAlienHome})
+  toggleImageSrc = (srcId) => {
+    if(srcId === 1) {
+      this.state.imageSrc1 === gutenHome ? this.setState({ imageSrc1: gutenGIF }) : this.setState({ imageSrc1: gutenHome })
     }
+    if(srcId === 2) {
+      this.state.imageSrc2 === CowboyAlienHome ? this.setState({ imageSrc2: CowboysAliens2 }) : this.setState({ imageSrc2: CowboyAlienHome })
+    } 
   }
+
+
+  //   if(this.state.imageSrc2 === CowboyAlienHome) {
+  //     this.setState({ imageSrc2: CowboysAliens2 })
+  //   } else {
+  //     this.setState({ imageSrc2: CowboyAlienHome})
+  //   }
+  // }
+
+  // ADD EACH LIST OF PICTURES TO ITS OWN ARRAY TO MAKE FUNCTION DYNAMIC?
  
 render() {
   return(
@@ -27,15 +40,14 @@ render() {
       <h1>Projects</h1>
 
       <div className="projects-div gutenreader-div">
-        <CrossfadeImage src={gutenGIF} />
-        {/* <img src={gutenGIF} /> */}
-      {/* <iframe src="https://user-images.githubusercontent.com/50784336/72040161-eea30180-3264-11ea-965d-b347b1b3fb7e.gif"></iframe> */}
+        <button onClick={ () => this.toggleImageSrc(1) }>Next</button>
+        <CrossfadeImage src={this.state.imageSrc1} />
       </div>
 
 
       <div className="projects-div cowboy-div">
-        <button onClick={this.toggleImageSrc}>Next</button>
-      <CrossfadeImage src={this.state.imageSrc} />
+        <button onClick={ () => this.toggleImageSrc(2) }>Next</button>
+      <CrossfadeImage src={this.state.imageSrc2} />
       <a href='https://edwindelbosque.github.io/Cowboys-vs-Aliens/'>
         {/* <img className="slides" src={CowboyAlienHome} />
         <img className="slides" src={CowboysAliens2} /> */}
