@@ -20,12 +20,11 @@ class Projects extends Component {
     }
   }
  
-
 render() {
   return(
     <div className="Projects">
       <h1>Projects</h1>
-      <div>
+      <div className="projects-div">
         <button onClick={this.toggleImageSrc}>Next</button>
       <CrossfadeImage src={this.state.imageSrc} />
       <a href='https://edwindelbosque.github.io/Cowboys-vs-Aliens/'>
