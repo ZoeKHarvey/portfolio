@@ -1,5 +1,10 @@
+.Projects {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
 
-.projects-div {
+.cowboy-div {
   width: 28%;
   height: 23vh;
 }
@@ -7,4 +12,13 @@
 .gutenreader-div {
   display: inline-block;
   overflow: hidden;
+  width: 34%;
+}
+
+.svg-next {
+
+  &:hover {
+    fill: #49d7ed;
+    cursor: pointer;
+  }
 }
