@@ -13,12 +13,9 @@ class Projects extends Component {
   }
 
   toggleImageSrc = () => {
-    console.log('UGH')
-    if(this.state.imageSrc = CowboyAlienHome) {
-      console.log('here')
+    if(this.state.imageSrc === CowboyAlienHome) {
       this.setState({ imageSrc: CowboysAliens2 })
     } else {
-      console.log('there')
       this.setState({ imageSrc: CowboyAlienHome})
     }
   }
