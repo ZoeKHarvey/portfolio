@@ -5,7 +5,12 @@ const About = () => {
 
   return(
     <div className="About">
-      <h1>About</h1>
+      <h6>Web Desinger</h6>
+      <section className="about-section-general">
+        <p>
+          
+        </p>
+      </section>
     </div>
   )
 }

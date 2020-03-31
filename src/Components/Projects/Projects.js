@@ -9,6 +9,7 @@ import icedhome from '../../assets/icedhome.png';
 import cinemaHome from '../../assets/cinema-home.png';
 import cinemaLogin from '../../assets/cinema-login.png';
 
+// might want to break state into single project objects
 
 class Projects extends Component {
   constructor() {
@@ -18,7 +19,6 @@ class Projects extends Component {
       imageSrc2: CowboyAlienHome,
       cinemaPics: cinemaHome,
       gutenTextVisible: 'hidden',
-
     }
   }
 
