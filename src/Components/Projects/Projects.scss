@@ -7,15 +7,21 @@
   height: 91vh;
 }
 
+.cinema-div,
 .iced-div,
 .cowboy-div {
   width: 24%;
+  height: 28vh;
+  border: 1px solid green;
+  position: relative;
 }
 
 .gutenreader-div {
   display: inline-block;
   overflow: hidden;
   width: 22%;
+  position: relative;
+  height: 80vh;
 }
 
 .gutenpics {
@@ -38,5 +44,11 @@
   display: flex;
   justify-content: space-between;
   border: 1px dashed red;
+  position: absolute;
+  bottom:0;
+  width: 100%;
 }
 
+.cinemapics {
+  height: 24vh;
+}

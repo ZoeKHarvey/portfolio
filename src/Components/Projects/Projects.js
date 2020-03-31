@@ -28,6 +28,7 @@ class Projects extends Component {
       this.state.imageSrc2 === CowboyAlienHome ? this.setState({ imageSrc2: CowboysAliens2 }) : this.setState({ imageSrc2: CowboyAlienHome })
     }
     if(srcId === 4) {
+      console.log(this.state.cinemaPics)
       this.state.cinemaPics === cinemaHome ? this.setState({ cinemaPics: cinemaLogin }) : this.setState({ cinemaPics: cinemaHome})
     }
 
@@ -45,7 +46,7 @@ render() {
         <div className="projects-div-footer">
           <a href="https://github.com/ZoeKHarvey/guten_reader_FE">Github</a>
           <a href="https://www.youtube.com/watch?v=OcsrT65ifnE">Demo</a>
-          <svg className="svg-next" xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24"><path d="M5.88 4.12L13.76 12l-7.88 7.88L8 22l10-10L8 2z"/><path d="M0 0h24v24H0z" fill="none"/></svg>
+          <svg className="svg-next" onClick={ () => this.toggleImageSrc(1) } xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24"><path d="M5.88 4.12L13.76 12l-7.88 7.88L8 22l10-10L8 2z"/><path d="M0 0h24v24H0z" fill="none"/></svg>
         </div>
       </div>
 
@@ -74,9 +75,12 @@ render() {
       </div>
 
       <div className="projects-div cinema-div">
+        <div className="cinemapics">
         <CrossfadeImage src={this.state.cinemaPics} />
+        </div>
 
         <div className="projects-div-footer">
+          <a href="https://github.com/SamuelColeman/cinema-night">Github</a>
         <svg className="svg-next" onClick={ () => this.toggleImageSrc(4) } xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24"><path d="M5.88 4.12L13.76 12l-7.88 7.88L8 22l10-10L8 2z"/><path d="M0 0h24v24H0z" fill="none"/></svg>
 
         </div>
