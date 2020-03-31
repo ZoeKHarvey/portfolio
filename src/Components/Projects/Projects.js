@@ -17,6 +17,7 @@ class Projects extends Component {
       imageSrc1: gutenHome,
       imageSrc2: CowboyAlienHome,
       cinemaPics: cinemaHome,
+      gutenTextVisible: 'hidden'
     }
   }
 
@@ -28,20 +29,26 @@ class Projects extends Component {
       this.state.imageSrc2 === CowboyAlienHome ? this.setState({ imageSrc2: CowboysAliens2 }) : this.setState({ imageSrc2: CowboyAlienHome })
     }
     if(srcId === 4) {
-      console.log(this.state.cinemaPics)
       this.state.cinemaPics === cinemaHome ? this.setState({ cinemaPics: cinemaLogin }) : this.setState({ cinemaPics: cinemaHome})
     }
-
   }
- 
+
+  toggleVisibility = (id) => {
+    if(id==='guten') {
+      this.state.gutenTextVisible === 'hidden' ? this.setState({ gutenTextVisible: 'visible'}) : this.setState({ gutenTextVisible: 'hidden'})
+    }
+  }
+
 render() {
+
   return(
     <div className="Projects">
 
       <div className="projects-div gutenreader-div">
 
-      <div className="gutenpics">
+      <div className="gutenpics" onClick={() => this.toggleVisibility('guten')}>
         <CrossfadeImage src={this.state.imageSrc1} />
+        <p style={{visibility: this.state.gutenTextVisible}} className="projects-p-guten">GutenReader provides the user with a cinematic experience. It is an eReader built on the Project Gutenberg API that performs sentiment analysis (with IBM Watson) to determine the mood of the current page and plays music (with Spotify) that matches that mood. Designed with accessibility in mind!</p>
         </div>
         <div className="projects-div-footer">
           <a href="https://github.com/ZoeKHarvey/guten_reader_FE">Github</a>

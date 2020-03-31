@@ -37,6 +37,9 @@
 
 .svg-next {
   fill: rgba(148, 148, 148, .7);
+  &:hover {
+    cursor: pointer;
+  }
 }
 
 .projects-div-img-next {
@@ -60,4 +63,9 @@
   height: 24vh;
 }
 
+.projects-p-guten {
+  z-index: 1;
+  position: absolute;
+  top: 0;
+}
 
