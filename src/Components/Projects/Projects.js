@@ -6,6 +6,8 @@ import CrossfadeImage from 'react-crossfade-image';
 import gutenGIF from '../../assets/gutenreader.gif';
 import gutenHome from '../../assets/gutenhome.png';
 import icedhome from '../../assets/icedhome.png';
+import cinemaHome from '../../assets/cinema-home.png';
+import cinemaLogin from '../../assets/cinema-login.png';
 
 
 class Projects extends Component {
@@ -13,18 +15,22 @@ class Projects extends Component {
     super()
     this.state = {
       imageSrc1: gutenHome,
-      imageSrc2: CowboyAlienHome
+      imageSrc2: CowboyAlienHome,
+      cinemaPics: cinemaHome,
     }
   }
 
   toggleImageSrc = (srcId) => {
-    console.log(this.state.imageSrc1)
     if(srcId === 1) {
       this.state.imageSrc1 === gutenHome ? this.setState({ imageSrc1: gutenGIF }) : this.setState({ imageSrc1: gutenHome })
     }
     if(srcId === 2) {
       this.state.imageSrc2 === CowboyAlienHome ? this.setState({ imageSrc2: CowboysAliens2 }) : this.setState({ imageSrc2: CowboyAlienHome })
-    } 
+    }
+    if(srcId === 4) {
+      this.state.cinemaPics === cinemaHome ? this.setState({ cinemaPics: cinemaLogin }) : this.setState({ cinemaPics: cinemaHome})
+    }
+
   }
  
 render() {
@@ -65,6 +71,15 @@ render() {
       <svg className="svg-next" onClick={ () => this.toggleImageSrc(2) } xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24"><path d="M5.88 4.12L13.76 12l-7.88 7.88L8 22l10-10L8 2z"/><path d="M0 0h24v24H0z" fill="none"/></svg>
 
       </div>
+      </div>
+
+      <div className="projects-div cinema-div">
+        <CrossfadeImage src={this.state.cinemaPics} />
+
+        <div className="projects-div-footer">
+        <svg className="svg-next" onClick={ () => this.toggleImageSrc(4) } xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24"><path d="M5.88 4.12L13.76 12l-7.88 7.88L8 22l10-10L8 2z"/><path d="M0 0h24v24H0z" fill="none"/></svg>
+
+        </div>
       </div>
 
 
