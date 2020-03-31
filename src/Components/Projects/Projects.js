@@ -62,7 +62,9 @@ render() {
 
 
       <div className="projects-div cowboy-div">
+        <div className="cowboypics">
       <CrossfadeImage src={this.state.imageSrc2} />
+      </div>
 
       <div className="projects-div-footer">
       <a href='https://github.com/ZoeKHarvey/Cowboys-vs-Aliens'>Github</a>

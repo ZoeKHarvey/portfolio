@@ -28,6 +28,13 @@
   width: 102%;
 }
 
+.projects-div {
+  opacity: .3;
+  &:hover {
+    opacity: 1
+  }
+}
+
 .svg-next {
   fill: rgba(148, 148, 148, .7);
 }
@@ -52,3 +59,5 @@
 .cinemapics {
   height: 24vh;
 }
+
+
