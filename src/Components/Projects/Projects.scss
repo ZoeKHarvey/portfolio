@@ -7,9 +7,9 @@
   height: 91vh;
 }
 
+.iced-div,
 .cowboy-div {
   width: 24%;
-  height: 23vh;
 }
 
 .gutenreader-div {
@@ -22,17 +22,8 @@
   width: 102%;
 }
 
-// change next button to just be at the bottom of the picture next to github link?
-
 .svg-next {
   fill: rgba(148, 148, 148, .7);
-  // height: 61vh;
-  // width: 40px;
-  // &:hover {
-  //   border: 1px solid rgba(148, 148, 148, .7);
-  //   fill: rgba(148, 148, 148, .7);
-  //   cursor: pointer;
-  // }
 }
 
 .projects-div-img-next {
@@ -48,3 +39,4 @@
   justify-content: space-between;
   border: 1px dashed red;
 }
+

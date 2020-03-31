@@ -5,6 +5,8 @@ import CowboysAliens2 from '../../assets/cowboysaliens2.png';
 import CrossfadeImage from 'react-crossfade-image';
 import gutenGIF from '../../assets/gutenreader.gif';
 import gutenHome from '../../assets/gutenhome.png';
+import icedhome from '../../assets/icedhome.png';
+
 
 class Projects extends Component {
   constructor() {
@@ -24,16 +26,6 @@ class Projects extends Component {
       this.state.imageSrc2 === CowboyAlienHome ? this.setState({ imageSrc2: CowboysAliens2 }) : this.setState({ imageSrc2: CowboyAlienHome })
     } 
   }
-
-
-  //   if(this.state.imageSrc2 === CowboyAlienHome) {
-  //     this.setState({ imageSrc2: CowboysAliens2 })
-  //   } else {
-  //     this.setState({ imageSrc2: CowboyAlienHome})
-  //   }
-  // }
-
-  // ADD EACH LIST OF PICTURES TO ITS OWN ARRAY TO MAKE FUNCTION DYNAMIC?
  
 render() {
   return(
@@ -44,13 +36,21 @@ render() {
       <div className="gutenpics">
         <CrossfadeImage src={this.state.imageSrc1} />
         </div>
-
         <div className="projects-div-footer">
-        <a href="https://github.com/ZoeKHarvey/guten_reader_FE">Github</a>
-        <a href="https://www.youtube.com/watch?v=OcsrT65ifnE">Demo</a>
-        <svg className="svg-next" onClick={ () => this.toggleImageSrc(1) } xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24"><path d="M5.88 4.12L13.76 12l-7.88 7.88L8 22l10-10L8 2z"/><path d="M0 0h24v24H0z" fill="none"/></svg>
+          <a href="https://github.com/ZoeKHarvey/guten_reader_FE">Github</a>
+          <a href="https://www.youtube.com/watch?v=OcsrT65ifnE">Demo</a>
+          <svg className="svg-next" xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24"><path d="M5.88 4.12L13.76 12l-7.88 7.88L8 22l10-10L8 2z"/><path d="M0 0h24v24H0z" fill="none"/></svg>
         </div>
+      </div>
 
+      <div className="projects-div iced-div">
+        <div className="icedpics">
+          <CrossfadeImage src={icedhome} />
+        </div>
+        <div className="projects-div-footer">
+        <a href="https://github.com/ZoeKHarvey/stats-on-stats">Github</a>
+        <svg className="svg-next" onClick={ () => this.toggleImageSrc(3) } xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24"><path d="M5.88 4.12L13.76 12l-7.88 7.88L8 22l10-10L8 2z"/><path d="M0 0h24v24H0z" fill="none"/></svg>
+        </div>
       </div>
 
 
