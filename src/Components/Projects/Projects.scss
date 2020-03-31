@@ -8,20 +8,43 @@
 }
 
 .cowboy-div {
-  width: 28%;
+  width: 24%;
   height: 23vh;
 }
 
 .gutenreader-div {
   display: inline-block;
   overflow: hidden;
-  width: 34%;
+  width: 22%;
 }
 
-.svg-next {
+.gutenpics {
+  width: 102%;
+}
 
-  &:hover {
-    fill: rgba(148, 148, 148, .7);
-    cursor: pointer;
-  }
+// change next button to just be at the bottom of the picture next to github link?
+
+.svg-next {
+  fill: rgba(148, 148, 148, .7);
+  // height: 61vh;
+  // width: 40px;
+  // &:hover {
+  //   border: 1px solid rgba(148, 148, 148, .7);
+  //   fill: rgba(148, 148, 148, .7);
+  //   cursor: pointer;
+  // }
+}
+
+.projects-div-img-next {
+  display: flex;
+  height: 80vh;
+  width: 80%;
+  justify-content: center;
+  align-items: center;
+}
+
+.projects-div-footer {
+  display: flex;
+  justify-content: space-between;
+  border: 1px dashed red;
 }

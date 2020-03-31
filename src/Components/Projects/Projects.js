@@ -16,6 +16,7 @@ class Projects extends Component {
   }
 
   toggleImageSrc = (srcId) => {
+    console.log(this.state.imageSrc1)
     if(srcId === 1) {
       this.state.imageSrc1 === gutenHome ? this.setState({ imageSrc1: gutenGIF }) : this.setState({ imageSrc1: gutenHome })
     }
@@ -39,24 +40,31 @@ render() {
     <div className="Projects">
 
       <div className="projects-div gutenreader-div">
-      {/* <svg className="svg-next" onClick={ () => this.toggleImageSrc(1) } xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24"><path d="M5.88 4.12L13.76 12l-7.88 7.88L8 22l10-10L8 2z"/><path d="M0 0h24v24H0z" fill="none"/></svg> */}
-      <div style={{display: 'flex', height: '80vh', width: '80%'}}> 
+
+      <div className="gutenpics">
         <CrossfadeImage src={this.state.imageSrc1} />
+        </div>
+
+        <div className="projects-div-footer">
+        <a href="https://github.com/ZoeKHarvey/guten_reader_FE">Github</a>
+        <a href="https://www.youtube.com/watch?v=OcsrT65ifnE">Demo</a>
         <svg className="svg-next" onClick={ () => this.toggleImageSrc(1) } xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24"><path d="M5.88 4.12L13.76 12l-7.88 7.88L8 22l10-10L8 2z"/><path d="M0 0h24v24H0z" fill="none"/></svg>
         </div>
-        <a href="https://github.com/ZoeKHarvey/guten_reader_FE">Github</a>
 
       </div>
 
 
       <div className="projects-div cowboy-div">
-        <button onClick={ () => this.toggleImageSrc(2) }>Next</button>
       <CrossfadeImage src={this.state.imageSrc2} />
-      <a href='https://edwindelbosque.github.io/Cowboys-vs-Aliens/'>
-        {/* <img className="slides" src={CowboyAlienHome} />
-        <img className="slides" src={CowboysAliens2} /> */}
-      </a>
+
+      <div className="projects-div-footer">
       <a href='https://github.com/ZoeKHarvey/Cowboys-vs-Aliens'>Github</a>
+      <a href='https://edwindelbosque.github.io/Cowboys-vs-Aliens/'>
+          Live
+      </a>
+      <svg className="svg-next" onClick={ () => this.toggleImageSrc(2) } xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24"><path d="M5.88 4.12L13.76 12l-7.88 7.88L8 22l10-10L8 2z"/><path d="M0 0h24v24H0z" fill="none"/></svg>
+
+      </div>
       </div>
 
 
