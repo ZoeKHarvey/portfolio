@@ -10,8 +10,9 @@ const Contact = () => {
 
   return(
     <div className="Contact">
-      <h2>Contact</h2>
+      <p className="contact-p">Send an inquiry, give an idea or just drop a line</p>
       <div className="contact-div-normal">
+        
       <a className="contact-a" title="802-343-4999" href="tel:802-343-4999">
         <img className="contact-svg" src={phone} />
       </a>
@@ -21,13 +22,13 @@ const Contact = () => {
       </div>
 
     <div className="contact-div-second">
-      <a className="contact-a" href="https://alumni.turing.io/alumni/zo%C3%AB-ketcham-harvey"><img className="contact-svg" src={turing} /></a>
     
+      <a className="contact-a" href="https://www.linkedin.com/in/zoe-kharvey/"><img className="contact-svg" src={linkedin} /></a>
 
       <a className="contact-a" href="https://github.com/ZoeKHarvey"><img className="contact-svg" src={github} /></a>
 
+      <a className="contact-a" href="https://alumni.turing.io/alumni/zo%C3%AB-ketcham-harvey"><img className="contact-svg" src={turing} /></a>
 
-      <a className="contact-a" href="https://www.linkedin.com/in/zoe-kharvey/"><img className="contact-svg" src={linkedin} /></a>
     </div>
 
 
