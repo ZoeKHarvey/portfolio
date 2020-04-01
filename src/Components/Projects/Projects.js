@@ -8,6 +8,7 @@ import gutenHome from '../../assets/gutenhome.png';
 import icedhome from '../../assets/icedhome.png';
 import cinemaHome from '../../assets/cinema-home.png';
 import cinemaLogin from '../../assets/cinema-login.png';
+import Footer from '../Footer/Footer';
 
 // might want to break state into single project objects
 
@@ -89,6 +90,7 @@ render() {
       </div>
     </div>
 
+    <Footer />
     </div>
   )
 }

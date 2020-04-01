@@ -19,7 +19,7 @@ function App() {
       <Route exact path='/about' render = {() => <> <About /> </>} />
       <Route exact path='/resume' render = {() => <> <Resume /> </>} />
       <Route exact path='/contact' render = {() => <> <Contact /> </>} />
-      <Footer />
+      
     </div>
   );
 }

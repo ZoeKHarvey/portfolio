@@ -1,5 +1,6 @@
 import React from 'react';
-import './Home.scss'
+import './Home.scss';
+import Footer from '../Footer/Footer'
 
 const Home = () => {
 
@@ -10,6 +11,7 @@ const Home = () => {
         <h1>Harvey</h1>
         <p className="home__p--about">Web Developer <span>/</span> Drink Slinger <span>/</span> Something Else </p>
       </div>
+      <Footer />
     </div>
   )
 
