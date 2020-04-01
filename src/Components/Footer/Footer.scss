@@ -1,3 +1,5 @@
+@import '../../util/variables';
+
 .Footer {
   display: flex;
   justify-content: center;
@@ -11,11 +13,11 @@
 
 .footer-img {
   max-width: 100%;
-  filter: invert(61%) sepia(12%) saturate(17%) hue-rotate(322deg) brightness(93%) contrast(95%);
+  filter: $svg-light-grey;
   &:hover {
     cursor: pointer;
     transform: scale(1.2);
-    filter: invert(68%) sepia(96%) saturate(372%) hue-rotate(147deg) brightness(80%) contrast(89%);
+    filter: $svg-blue;
   }
 }
 

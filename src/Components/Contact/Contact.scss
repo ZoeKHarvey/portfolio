@@ -1,0 +1,37 @@
+@import '../../util/variables';;
+
+.Contact {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  align-content: center;
+  
+}
+
+.contact-div-second,
+.contact-div-normal {
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+    height: 12vh;
+    display: flex;
+    border: 1px solid red;
+    justify-content: space-evenly;
+}
+
+
+
+.contact-svg {
+  filter: $svg-light-grey;
+  width: 100%;
+  &:hover {
+    filter: $svg-blue;
+    transform: scale(1.2)
+  }
+}
+
+.contact-a {
+  width: 10%;
+  border: 1px dotted blue;
+}
