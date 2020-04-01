@@ -8,9 +8,15 @@ const Footer = () => {
 
   return(
     <div className="Footer">
+      <a className="a" href="https://www.linkedin.com/in/zoe-kharvey/">
       <img className="footer-img" src={linkedin} />
+      </a>
+      <a className="a" href="https://github.com/ZoeKHarvey">
       <img className="footer-img footer-github" src={github} />
-      <img className="footer-img" src={turing} />
+      </a>
+      <a className="a" href="https://alumni.turing.io/alumni/zo%C3%AB-ketcham-harvey">
+      <img className="footer-img footer-turing" src={turing} />
+      </a>
     </div>
   )
 }

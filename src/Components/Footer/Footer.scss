@@ -1,12 +1,33 @@
 .Footer {
   display: flex;
+  justify-content: center;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  // margin-bottom: 2vh;
+  height: 10vh;
 
 }
 
 .footer-img {
-  max-width: 4%;
+  max-width: 100%;
+  filter: invert(61%) sepia(12%) saturate(17%) hue-rotate(322deg) brightness(93%) contrast(95%);
+  &:hover {
+    cursor: pointer;
+    transform: scale(1.2);
+    filter: invert(68%) sepia(96%) saturate(372%) hue-rotate(147deg) brightness(80%) contrast(89%);
+  }
 }
 
-.footer-github {
-  fill: black;
+.footer-turing {
+  transform: scale(1.2)
 }
+
+.a {
+  margin: 0 25px;
+  display: inline-block;
+  // border: 1px dashed green;
+  width: 2.5%;
+  height: 7vh;
+}
+
