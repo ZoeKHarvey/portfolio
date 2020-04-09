@@ -8,9 +8,18 @@ const About = () => {
     <div className="About">
       <h6>Web Desinger</h6>
       <section className="about-section-general">
-        <p>
+        <p>Technologies Used</p>
+        <ul>
+          <li>React</li>
+          <li>Redux</li>
+          <li>Node.js</li>
+          <li>Express</li>
+          <li>Knex</li>
+          <li>CSS</li>
+          <li>Sass</li>
+          <li>HTML</li>
           
-        </p>
+        </ul>
       </section>
 
       <Footer />
