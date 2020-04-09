@@ -1,7 +1,6 @@
 import React, {Component} from 'react';
 import './About.scss';
 import Footer from '../Footer/Footer'
-import Dropdown from 'react-dropdown';
 import 'react-dropdown/style.css';
 import Select from 'react-select';
 import {technologies} from '../../util/technologies'
@@ -13,8 +12,6 @@ const options = [
   { value: 'languages', label: 'Languages' },
   { value: 'libraries', label: 'Libraries'}
 ];
-
-
 
 class About extends Component {
   constructor() {
@@ -59,7 +56,6 @@ render() {
       <h6>Web Desinger</h6>
       <section className="about-section-general">
         <p>Technologies Used</p>
-        {/* <Dropdown options={options} onChange={handleSortSelect} placeholder="Sort By" onChange={_onSelect} />; */}
         <ul>
           {mappedTechNames}
 
