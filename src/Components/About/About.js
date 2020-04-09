@@ -4,6 +4,7 @@ import Footer from '../Footer/Footer'
 import Dropdown from 'react-dropdown';
 import 'react-dropdown/style.css';
 import Select from 'react-select';
+import {technologies} from '../../util/technologies'
 
 
 const options = [
@@ -13,20 +14,7 @@ const options = [
   { value: 'libraries', label: 'Libraries'}
 ];
 
-let technologies = [ 
-  {name: 'React',
-   category: 'frameworks',
-   related: ['React', 'JavaScript'],
-   extras: ''},
-  {name: 'Redux',
-   category: 'libraries',
-   related: ['React'],
-   extras: ''},
-  {name: 'Node.js',
-   category: 'Server-Side',
-   related: ['JavaScript'],
-   extras: ''}
-]
+
 
 class About extends Component {
   constructor() {
@@ -56,18 +44,6 @@ class About extends Component {
       this.setState({ renderedList : newT })
     }
   }
-
-
-  //   if(option ==="frameworks") {
-  //     let newT = technologies.filter(tech => tech.category === "Frameworks")
-  //     this.setState({renderedList: newT})
-  //     console.log(this.state)
-  //   }
-  //   if(option === "libraries") {
-  //     let newT = technologies.filter(tech => tech.category === "Libraries")
-  //     this.setState({renderedList: newT})
-  //   }
-  // }
 
 
 render() {
