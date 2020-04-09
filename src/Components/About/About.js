@@ -10,7 +10,7 @@ const options = [
   { value: 'alph', label: 'A to Z' },
   { value: 'frameworks', label: 'Frameworks' },
   { value: 'languages', label: 'Languages' },
-  { value: 'basics', label: 'The Basics'}
+  { value: 'libraries', label: 'Libraries'}
 ];
 
 let technologies = [ 
@@ -55,6 +55,10 @@ class About extends Component {
       let newT = technologies.filter(tech => tech.category === "Frameworks")
       this.setState({renderedList: newT})
       console.log(this.state)
+    }
+    if(option === "libraries") {
+      let newT = technologies.filter(tech => tech.category === "Libraries")
+      this.setState({renderedList: newT})
     }
   }
 
