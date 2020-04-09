@@ -4,7 +4,10 @@ import Footer from '../Footer/Footer'
 import Dropdown from 'react-dropdown';
 import 'react-dropdown/style.css';
 
-const About = () => {
+const About = ({handleSortSelect}) => {
+
+
+
   let technologies = [ 
     {name: 'React',
      category: 'Frameworks',
@@ -25,24 +28,20 @@ const About = () => {
   })
 
   const options = [
-    'one', 'two', 'three'
-  ];
-  const defaultOption = options[0];
+    'Alphabetical', 'Frameworks', 'Libraries', 'Server-Side', 'Client-Side'
+  ]
+
+
 
   return(
     <div className="About">
       <h6>Web Desinger</h6>
       <section className="about-section-general">
         <p>Technologies Used</p>
-        
+        <Dropdown options={options} onClick={handleSortSelect} placeholder="Sort By" />;
         <ul>
           {mappedTechNames}
         </ul>
-
-
- 
-
-<Dropdown options={options} placeholder="Sort By" />;
       </section>
 
       <Footer />

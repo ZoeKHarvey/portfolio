@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {Component} from 'react';
 import { Route } from 'react-router-dom';
 import Home from './Components/Home/Home';
 import Header from './Components/Header/Header';
@@ -10,18 +10,26 @@ import Footer from './Components/Footer/Footer';
 import './App.scss';
 
 
-function App() {
-  return (
-    <div className="App">
-      <Header />
-      <Route exact path='/' render = {() => <> <Home /> </>} />
-      <Route exact path='/projects' render = {() => <> <Projects /> </>} />
-      <Route exact path='/about' render = {() => <> <About /> </>} />
-      <Route exact path='/resume' render = {() => <> <Resume /> </>} />
-      <Route exact path='/contact' render = {() => <> <Contact /> </>} />
-      
-    </div>
-  );
+class App extends Component {
+
+  handleSortSelect = (a) => {
+    console.log('in it')
+  }
+
+  render() {
+    return (
+      <div className="App">
+        <Header />
+        <Route exact path='/' render = {() => <> <Home /> </>} />
+        <Route exact path='/projects' render = {() => <> <Projects /> </>} />
+        <Route exact path='/about' render = {() => <> <About handleSortSelect = {this.handleSortSelect} /> </>} />
+        <Route exact path='/resume' render = {() => <> <Resume /> </>} />
+        <Route exact path='/contact' render = {() => <> <Contact /> </>} />
+        
+      </div>
+    );
+  }
+
 }
 
 export default App;
