@@ -11,23 +11,7 @@ import './App.scss';
 
 
 class App extends Component {
-  // constructor() {
-  //   super()
-  //   this.state = {
-  //     selectedOption = null
-  //   }
-  // }
 
-  handleSortSelect = (a) => {
-    console.log('in it')
-  }
-
-  handleChange = selectedOption => {
-    this.setState(
-      { selectedOption },
-      () => console.log(`Option selected:`, this.state.selectedOption)
-    );
-  };
 
   render() {
     return (
@@ -35,7 +19,7 @@ class App extends Component {
         <Header />
         <Route exact path='/' render = {() => <> <Home /> </>} />
         <Route exact path='/projects' render = {() => <> <Projects /> </>} />
-        <Route exact path='/about' render = {() => <> <About handleSortSelect = {this.handleSortSelect} /> </>} />
+        <Route exact path='/about' render = {() => <> <About /> </>} />
         <Route exact path='/resume' render = {() => <> <Resume /> </>} />
         <Route exact path='/contact' render = {() => <> <Contact /> </>} />
         
