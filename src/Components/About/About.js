@@ -23,6 +23,7 @@ class About extends Component {
       selectedOption: null,
       renderedList: [],
       details: '',
+      currentTech: ''
     };
   }
 
@@ -47,38 +48,49 @@ class About extends Component {
   }
 
   showDetails = (tech) => {
-    console.log(tech)
+    this.setState({currentTech: tech})
     let related = tech.related.map(t => {
-      return <li>{t}</li>
+      return <p>{t}</p>
     })
-    console.log('related', related)
     this.setState({
       details : related
     })
-    console.log(this.state.details)
+    console.log(this.state)
   }
 
 
 render() {
   const { selectedOption } = this.state;
   let mappedTechNames = technologies.map(tech => {
-    return <li onClick={ () => this.showDetails(tech)}>{tech.name}</li>
+    {console.log(this.state.currentTech)}
+    return <li className="hover" onMouseEnter={ () => this.showDetails(tech)}>
+              {tech.name}
+              {this.state.currentTech.name === tech.name && <p>{this.state.details}</p>} 
+           </li>
   })
   let mappedOptionTech = this.state.renderedList.map(tech => {
     return <li onClick={ () => this.showDetails(tech)}>{tech.name}</li>
   })
+
   return(
     <div className="About">
-      <h6>Web Desinger</h6>
-      <section className="about-section-general">
+
+    <h6>Web Desinger</h6>
         <p>Technologies Used</p>
+
+    <div id="wrapper">
+      {/* <p class="text">{this.state.details}</p> */}
         <ul>
           {mappedTechNames}
-
         </ul>
-          <ul>
-          {this.state.details}
-          </ul>
+    </div>
+
+
+
+     
+      <section className="about-section-general">
+        
+          
       </section>
 
 
@@ -89,6 +101,9 @@ render() {
       />
 
       {mappedOptionTech}
+
+
+
 
 
 
