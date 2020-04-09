@@ -3,6 +3,24 @@ import './About.scss';
 import Footer from '../Footer/Footer'
 
 const About = () => {
+  let technologies = [ 
+    {name: 'React',
+     category: 'Frameworks',
+     related: ['React', 'JavaScript'],
+     extras: ''},
+    {name: 'Redux',
+     category: 'Libraries',
+     related: ['React'],
+     extras: ''},
+    {name: 'Node.js',
+     category: 'Server-Side',
+     related: ['JavaScript'],
+     extras: ''}
+  ]
+
+  let mappedTechNames = technologies.map(tech => {
+    return <li>{tech.name}</li>
+  })
 
   return(
     <div className="About">
@@ -10,15 +28,7 @@ const About = () => {
       <section className="about-section-general">
         <p>Technologies Used</p>
         <ul>
-          <li>React</li>
-          <li>Redux</li>
-          <li>Node.js</li>
-          <li>Express</li>
-          <li>Knex</li>
-          <li>CSS</li>
-          <li>Sass</li>
-          <li>HTML</li>
-          
+          {mappedTechNames}
         </ul>
       </section>
 
