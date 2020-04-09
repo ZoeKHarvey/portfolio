@@ -11,10 +11,23 @@ import './App.scss';
 
 
 class App extends Component {
+  // constructor() {
+  //   super()
+  //   this.state = {
+  //     selectedOption = null
+  //   }
+  // }
 
   handleSortSelect = (a) => {
     console.log('in it')
   }
+
+  handleChange = selectedOption => {
+    this.setState(
+      { selectedOption },
+      () => console.log(`Option selected:`, this.state.selectedOption)
+    );
+  };
 
   render() {
     return (
