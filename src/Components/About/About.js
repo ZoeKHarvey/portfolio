@@ -38,7 +38,7 @@ const About = ({handleSortSelect}) => {
       <h6>Web Desinger</h6>
       <section className="about-section-general">
         <p>Technologies Used</p>
-        <Dropdown options={options} onClick={handleSortSelect} placeholder="Sort By" />;
+        <Dropdown options={options} onChange={handleSortSelect} placeholder="Sort By" />;
         <ul>
           {mappedTechNames}
         </ul>
