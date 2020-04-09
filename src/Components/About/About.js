@@ -33,6 +33,7 @@ class About extends Component {
     super()
     this.state = {
       selectedOption: null,
+      renderedList: []
     };
   }
 
@@ -51,8 +52,9 @@ class About extends Component {
     }); 
     }
     if(option ==="frameworks") {
-      technologies = technologies.filter(tech => tech.category === "Frameworks")
-      console.log(technologies)
+      let newT = technologies.filter(tech => tech.category === "Frameworks")
+      this.setState({renderedList: newT})
+      console.log(this.state)
     }
   }
 
@@ -60,6 +62,9 @@ class About extends Component {
 render() {
   const { selectedOption } = this.state;
   let mappedTechNames = technologies.map(tech => {
+    return <li>{tech.name}</li>
+  })
+  let mappedOptionTech = this.state.renderedList.map(tech => {
     return <li>{tech.name}</li>
   })
   return(
@@ -70,6 +75,7 @@ render() {
         {/* <Dropdown options={options} onChange={handleSortSelect} placeholder="Sort By" onChange={_onSelect} />; */}
         <ul>
           {mappedTechNames}
+
         </ul>
       </section>
 
@@ -79,6 +85,8 @@ render() {
         onChange={this.handleChange}
         options={options}
       />
+
+      {mappedOptionTech}
 
 
 
