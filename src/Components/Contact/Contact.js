@@ -10,7 +10,7 @@ const Contact = () => {
 
   return(
     <div className="Contact">
-      <p className="contact-p">Send an inquiry, give an idea or just drop a line</p>
+      <p className="contact-p">Send an inquiry, lend an idea or just drop a line</p>
       <div className="contact-div-normal">
         
       <a className="contact-a" title="802-343-4999" href="tel:802-343-4999">
