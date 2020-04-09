@@ -55,17 +55,15 @@ class About extends Component {
     this.setState({
       details : related
     })
-    console.log(this.state)
   }
 
 
 render() {
   const { selectedOption } = this.state;
   let mappedTechNames = technologies.map(tech => {
-    {console.log(this.state.currentTech)}
     return <li className="hover" onMouseEnter={ () => this.showDetails(tech)}>
               {tech.name}
-              {this.state.currentTech.name === tech.name && <p>{this.state.details}</p>} 
+              {this.state.currentTech.name === tech.name && <div>{this.state.details}</div>} 
            </li>
   })
   let mappedOptionTech = this.state.renderedList.map(tech => {
@@ -79,7 +77,6 @@ render() {
         <p>Technologies Used</p>
 
     <div id="wrapper">
-      {/* <p class="text">{this.state.details}</p> */}
         <ul>
           {mappedTechNames}
         </ul>
