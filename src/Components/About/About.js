@@ -27,6 +27,7 @@ const About = () => {
       <h6>Web Desinger</h6>
       <section className="about-section-general">
         <p>Technologies Used</p>
+        
         <ul>
           {mappedTechNames}
         </ul>

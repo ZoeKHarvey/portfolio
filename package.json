@@ -9,6 +9,7 @@
     "react": "^16.13.1",
     "react-crossfade-image": "^1.2.0",
     "react-dom": "^16.13.1",
+    "react-dropdown": "^1.7.0",
     "react-pdf": "^4.1.0",
     "react-router": "^5.1.2",
     "react-router-dom": "^5.1.2",
