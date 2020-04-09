@@ -10,7 +10,10 @@ const options = [
   { value: 'alph', label: 'A to Z' },
   { value: 'frameworks', label: 'Frameworks' },
   { value: 'languages', label: 'Languages' },
-  { value: 'libraries', label: 'Libraries'}
+  { value: 'libraries', label: 'Libraries' },
+  { value: 'tdd', label: 'Test Driven Development' },
+  { value: 'server-side', label: 'Server-Side' },
+  { value: 'version control', label: 'Version Control'}
 ];
 
 class About extends Component {
