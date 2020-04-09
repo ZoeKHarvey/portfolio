@@ -1,3 +1,11 @@
+@import '../../util/variables';;
+
+.About {
+  display: flex;
+  border: 1px dashed green;
+  justify-content: space-around;
+}
+
 #wrapper .text {
   position:relative;
   bottom:30px;
@@ -9,7 +17,33 @@
     visibility:visible;
   }
 
-  li {
-    margin-top: 3vh;
-    border: 1px solid red;
+  .about-ul {
+   list-style: none;
+   width: 15%;
+   font-size: .8em;
   }
+
+  .about-li {
+    color: $lighter-grey;
+    margin-top: .8vh;
+  }
+
+  .about-dropdown {
+    border: 1px solid blue
+  }
+
+  .about-div-dropdown {
+    width: 100%;
+    border: 1px dotted pink;
+  }
+
+
+  .about-div-techlist {
+    width: 100%
+  }
+
+
+.about-section-tech {
+  display: flex;
+  width: 20%
+}

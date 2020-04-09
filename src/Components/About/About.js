@@ -61,45 +61,54 @@ class About extends Component {
 render() {
   const { selectedOption } = this.state;
   let mappedTechNames = technologies.map(tech => {
-    return <li className="hover" onMouseEnter={ () => this.showDetails(tech)}>
+    return <li className="hover about-li" 
+    // onMouseEnter={ () => this.showDetails(tech)}
+    >
               {tech.name}
               {this.state.currentTech.name === tech.name && <div>{this.state.details}</div>} 
            </li>
   })
   let mappedOptionTech = this.state.renderedList.map(tech => {
-    return <li onClick={ () => this.showDetails(tech)}>{tech.name}</li>
+    return <li className="about-li">{tech.name}</li>
   })
 
   return(
     <div className="About">
 
-    <h6>Web Desinger</h6>
-        <p>Technologies Used</p>
-
-    <div id="wrapper">
-        <ul>
-          {mappedTechNames}
-        </ul>
-    </div>
-
-
+      <section className="about-section-tech">
 
      
-      <section className="about-section-general">
-        
-          
-      </section>
+
+<div className="about-div-techlist">
+      <p>Technologies Used</p>
+      <div id="wrapper">
+        <ul className="about-ul">
+          {mappedTechNames}
+        </ul>
+      </div>
+      </div>
 
 
+<div className="about-div-dropdown">
       <Select
+        className ="about-dropdown"
         value={selectedOption}
         onChange={this.handleChange}
         options={options}
       />
+      <ul className="about-ul">
 
       {mappedOptionTech}
+      </ul>
+      </div>
+
+      </section>
 
 
+      <section className="about-section-general">
+        <p>Personal About Section</p>
+          
+        </section>
 
 
 
