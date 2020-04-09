@@ -21,7 +21,8 @@ class About extends Component {
     super()
     this.state = {
       selectedOption: null,
-      renderedList: []
+      renderedList: [],
+      details: '',
     };
   }
 
@@ -45,14 +46,26 @@ class About extends Component {
     }
   }
 
+  showDetails = (tech) => {
+    console.log(tech)
+    let related = tech.related.map(t => {
+      return <li>{t}</li>
+    })
+    console.log('related', related)
+    this.setState({
+      details : related
+    })
+    console.log(this.state.details)
+  }
+
 
 render() {
   const { selectedOption } = this.state;
   let mappedTechNames = technologies.map(tech => {
-    return <li>{tech.name}</li>
+    return <li onClick={ () => this.showDetails(tech)}>{tech.name}</li>
   })
   let mappedOptionTech = this.state.renderedList.map(tech => {
-    return <li>{tech.name}</li>
+    return <li onClick={ () => this.showDetails(tech)}>{tech.name}</li>
   })
   return(
     <div className="About">
@@ -63,6 +76,9 @@ render() {
           {mappedTechNames}
 
         </ul>
+          <ul>
+          {this.state.details}
+          </ul>
       </section>
 
 
