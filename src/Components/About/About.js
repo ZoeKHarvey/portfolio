@@ -15,11 +15,11 @@ const options = [
 
 let technologies = [ 
   {name: 'React',
-   category: 'Frameworks',
+   category: 'frameworks',
    related: ['React', 'JavaScript'],
    extras: ''},
   {name: 'Redux',
-   category: 'Libraries',
+   category: 'libraries',
    related: ['React'],
    extras: ''},
   {name: 'Node.js',
@@ -51,16 +51,23 @@ class About extends Component {
         return (a.name < b.name) ? -1 : (a.name > b.name) ? 1 : 0;
     }); 
     }
-    if(option ==="frameworks") {
-      let newT = technologies.filter(tech => tech.category === "Frameworks")
-      this.setState({renderedList: newT})
-      console.log(this.state)
-    }
-    if(option === "libraries") {
-      let newT = technologies.filter(tech => tech.category === "Libraries")
-      this.setState({renderedList: newT})
+    else {
+      let newT = technologies.filter(tech => tech.category === option)
+      this.setState({ renderedList : newT })
     }
   }
+
+
+  //   if(option ==="frameworks") {
+  //     let newT = technologies.filter(tech => tech.category === "Frameworks")
+  //     this.setState({renderedList: newT})
+  //     console.log(this.state)
+  //   }
+  //   if(option === "libraries") {
+  //     let newT = technologies.filter(tech => tech.category === "Libraries")
+  //     this.setState({renderedList: newT})
+  //   }
+  // }
 
 
 render() {
