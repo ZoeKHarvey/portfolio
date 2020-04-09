@@ -48,7 +48,11 @@ class About extends Component {
     if(option === "alph") {
       technologies.sort(function(a, b) {
         return (a.name < b.name) ? -1 : (a.name > b.name) ? 1 : 0;
-    });
+    }); 
+    }
+    if(option ==="frameworks") {
+      technologies = technologies.filter(tech => tech.category === "Frameworks")
+      console.log(technologies)
     }
   }
 
