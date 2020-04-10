@@ -1,4 +1,5 @@
-@import '../../util/variables';;
+@import '../../util/variables';
+
 
 .About {
   display: flex;
@@ -28,8 +29,12 @@
     margin-top: .8vh;
   }
 
+
+
   .about-dropdown {
-    border: 1px solid blue
+    border: 1px solid blue;
+    font-size: .8em;
+    background-color: $darker-grey;
   }
 
   .about-div-dropdown {
@@ -46,4 +51,8 @@
 .about-section-tech {
   display: flex;
   width: 20%
+}
+
+.css-yk16xz-control {
+  background-color: black;
 }
