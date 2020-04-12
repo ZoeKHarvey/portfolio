@@ -135,7 +135,7 @@ render() {
       </div>
 
       </section>
-      <label for="cars">Choose a car:</label>
+      <p></p>
 
       <section className="about-section-general">
         <p>Personal About Section</p>
