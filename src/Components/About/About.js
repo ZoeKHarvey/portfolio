@@ -135,10 +135,13 @@ render() {
       </div>
 
       </section>
-      <p></p>
-
+      
       <section className="about-section-general">
-        <p>Personal About Section</p>
+      <p className="about-first">Striving for <span>simple answers</span> to <span>complex issues</span>.</p>
+      <p>From managing high-paced bars to learning new tech stacks on the fly, 
+        I've learned a lot about solving problems efficiently, cooperatively and under pressure while 
+        constantly keeping the end-user's experience and needs in the forefront of each decision.</p>
+
           
         </section>
 
