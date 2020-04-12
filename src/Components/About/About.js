@@ -82,15 +82,17 @@ render() {
   const { selectedOption } = this.state;
   let mappedTechNames = technologies.map(tech => {
     return <>
-    <li className="hover about-li" >
+    <li className="about-li" >
               {tech.name} 
            </li>
            <span className="about-li-span">/</span>
-           </>
-           
+           </> 
   })
   let mappedOptionTech = this.state.renderedList.map(tech => {
-    return <li className="about-li">{tech.name}</li>
+    return <>
+    <li className="about-li">{tech.name}</li>
+    <span className="about-li-span">/</span>
+    </>
   })
 
   return(
@@ -104,10 +106,10 @@ render() {
         constantly keeping the end-user's experience and needs in the forefront of each decision.</p>
         </section>  
 
-      <section className="about-section-tech">
-
+ 
+<hr/>
      
-
+<section className="about-section-tech">
 <div className="about-div-techlist">
   
         <ul className="about-ul">
@@ -142,6 +144,7 @@ render() {
       </div>
 
       </section>
+
       
   
 
