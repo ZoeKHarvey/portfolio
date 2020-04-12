@@ -16,6 +16,25 @@ const options = [
   { value: 'version control', label: 'Version Control'}
 ];
 
+// const customStyles = {
+//   option: (provided, state) => ({
+//     ...provided,
+//     borderBottom: '5px dotted pink',
+//     color: state.isSelected ? 'red' : 'blue',
+//     padding: 20,
+//   }),
+//   control: () => ({
+//     // none of react-select's styles are passed to <Control />
+//     width: 200,
+//   }),
+//   singleValue: (provided, state) => {
+//     const opacity = state.isDisabled ? 0.5 : 1;
+//     const transition = 'opacity 300ms';
+
+//     return { ...provided, opacity, transition };
+//   }
+// }
+
 class About extends Component {
   constructor() {
     super()
@@ -28,6 +47,7 @@ class About extends Component {
   }
 
   handleChange = selectedOption => {
+    console.log(selectedOption)
     this.setState(
       { selectedOption },
       () => console.log(`Option selected:`, this.state.selectedOption)
@@ -91,6 +111,18 @@ render() {
 
 <div className="about-div-dropdown">
       <Select
+        // styles={customStyles}
+        theme={(theme) => ({
+          ...theme,
+          borderRadius: 0,
+          colors: {
+          ...theme.colors,
+            text: 'orangered',
+            primary25: 'hotpink',
+            primary: 'black',
+          },
+        })}
+
         className ="about-dropdown"
         value={selectedOption}
         onChange={this.handleChange}
@@ -103,7 +135,7 @@ render() {
       </div>
 
       </section>
-
+      <label for="cars">Choose a car:</label>
 
       <section className="about-section-general">
         <p>Personal About Section</p>
