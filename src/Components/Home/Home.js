@@ -1,6 +1,6 @@
 import React from 'react';
 import './Home.scss';
-import Footer from '../Footer/Footer'
+import Footer from '../Footer/Footer';
 
 const Home = () => {
 
@@ -13,8 +13,7 @@ const Home = () => {
       </div>
       <Footer />
     </div>
-  )
-
-}
+  );
+};
 
 export default Home;
