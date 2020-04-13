@@ -9,7 +9,7 @@ const Home = () => {
       <div className="home__div--name">
         <h1>Zoë</h1>
         <h1>Harvey</h1>
-        <p className="home__p--about">Web Developer <span>/</span> Drink Slinger <span>/</span> Mountain Conquerer </p>
+        <p className="home__p--about">Web Developer <span>/</span> Adaptive Designer <span>/</span> Drink Slinger </p>
       </div>
       <Footer />
     </div>
