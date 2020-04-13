@@ -23,11 +23,11 @@ const Contact = () => {
 
     <div className="contact-div-second">
     
-      <a className="contact-a" href="https://www.linkedin.com/in/zoe-kharvey/"><img className="contact-svg" src={linkedin} /></a>
+      <a className="contact-a" target="_blank" href="https://www.linkedin.com/in/zoe-kharvey/"><img className="contact-svg" src={linkedin} /></a>
 
-      <a className="contact-a" href="https://github.com/ZoeKHarvey"><img className="contact-svg" src={github} /></a>
+      <a className="contact-a" target="_blank" href="https://github.com/ZoeKHarvey"><img className="contact-svg" src={github} /></a>
 
-      <a className="contact-a" href="https://alumni.turing.io/alumni/zo%C3%AB-ketcham-harvey"><img className="contact-svg" src={turing} /></a>
+      <a className="contact-a" target="_blank" href="https://alumni.turing.io/alumni/zo%C3%AB-ketcham-harvey"><img className="contact-svg" src={turing} /></a>
 
     </div>
 

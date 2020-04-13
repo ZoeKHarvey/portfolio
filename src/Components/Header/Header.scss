@@ -88,4 +88,7 @@ $animate: all 0.2s ease-in-out;
     background-image: url('../../assets/porfolio-logo-blue.png');
     cursor: pointer;
   }
+  &:active {
+    transform: scale(1.1);
+  }
 }
