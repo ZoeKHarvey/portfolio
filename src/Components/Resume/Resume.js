@@ -8,7 +8,7 @@ const Resume = () => {
     <div className="Resume">
       <iframe className="resume-iframe" src={resume}></iframe>
     </div>
-  )
-}
+  );
+};
 
 export default Resume;
