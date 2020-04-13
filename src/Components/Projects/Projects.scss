@@ -12,7 +12,6 @@
 .cowboy-div {
   width: 24%;
   height: 28vh;
-  border: 1px solid green;
   position: relative;
 }
 
@@ -39,6 +38,7 @@
   fill: rgba(148, 148, 148, .7);
   &:hover {
     cursor: pointer;
+    fill: $secondary-blue;
   }
 }
 
@@ -56,6 +56,7 @@
   position: absolute;
   bottom:0;
   width: 100%;
+  box-shadow: $box-shadow1;
 }
 
 .cinemapics {
@@ -68,5 +69,16 @@
   top: 0;
   background: black;
   color: white;
+}
+
+.projects-div-footer > a {
+  font-weight: 600;
+  &:hover {
+    color: $secondary-blue;
+    // font-weight: 700;
+  }
+  &:focus {
+    transform: scale(1.1)
+  }
 }
 

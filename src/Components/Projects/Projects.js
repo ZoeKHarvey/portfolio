@@ -48,7 +48,7 @@ class Projects extends Component {
             <CrossfadeImage src={this.state.imageSrc1} />
             <p style={{visibility: this.state.gutenTextVisible}} className="projects-p-guten">GutenReader provides the user with a cinematic experience. It is an eReader built on the Project Gutenberg API that performs sentiment analysis (with IBM Watson) to determine the mood of the current page and plays music (with Spotify) that matches that mood. Designed with accessibility in mind!</p>
           </div>
-          <div className="projects-div-footer">
+          <div className="guten-footer projects-div-footer">
             <a target="_blank" href="https://github.com/ZoeKHarvey/guten_reader_FE">Github</a>
             <a target="_blank" href="https://www.youtube.com/watch?v=OcsrT65ifnE">Demo</a>
             <svg className="svg-next" onClick={ () => this.toggleImageSrc(1) } xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24"><path d="M5.88 4.12L13.76 12l-7.88 7.88L8 22l10-10L8 2z"/><path d="M0 0h24v24H0z" fill="none"/></svg>
