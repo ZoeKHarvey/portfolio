@@ -12,26 +12,18 @@ const Contact = () => {
     <div className="Contact">
       <p className="contact-p">Send an inquiry, lend an idea or just drop a line</p>
       <div className="contact-div-normal">
-        
-      <a className="contact-a" title="802-343-4999" href="tel:802-343-4999">
-        <img className="contact-svg" src={phone} />
-      </a>
-      <a className="contact-a" href="mailto:zoekharvey@gmail.com">
-        <img className="contact-svg" src={mail} />
-      </a>
+        <a className="contact-a" title="802-343-4999" href="tel:802-343-4999">
+          <img className="contact-svg" src={phone} />
+        </a>
+        <a className="contact-a" href="mailto:zoekharvey@gmail.com">
+          <img className="contact-svg" src={mail} />
+        </a>
       </div>
-
-    <div className="contact-div-second">
-    
-      <a className="contact-a" target="_blank" href="https://www.linkedin.com/in/zoe-kharvey/"><img className="contact-svg" src={linkedin} /></a>
-
-      <a className="contact-a" target="_blank" href="https://github.com/ZoeKHarvey"><img className="contact-svg" src={github} /></a>
-
-      <a className="contact-a" target="_blank" href="https://alumni.turing.io/alumni/zo%C3%AB-ketcham-harvey"><img className="contact-svg" src={turing} /></a>
-
-    </div>
-
-
+      <div className="contact-div-second">
+        <a className="contact-a" target="_blank" href="https://www.linkedin.com/in/zoe-kharvey/"><img className="contact-svg" src={linkedin} /></a>
+        <a className="contact-a" target="_blank" href="https://github.com/ZoeKHarvey"><img className="contact-svg" src={github} /></a>
+        <a className="contact-a" target="_blank" href="https://alumni.turing.io/alumni/zo%C3%AB-ketcham-harvey"><img className="contact-svg" src={turing} /></a>
+      </div>
     </div>
   )
 }
