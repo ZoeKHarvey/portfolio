@@ -1,6 +1,7 @@
 import React, {Component} from 'react';
 import './Header.scss';
 import {Link} from 'react-router-dom';
+import menuIcon from '../../assets/menu-24px.svg'
 
 class Header extends Component {
 
@@ -14,12 +15,6 @@ class Header extends Component {
     this.showMenu = this.showMenu.bind(this);
     this.closeMenu = this.closeMenu.bind(this);
   }
-
-  // onChange = (e) => {
-  //   this.props.history.push(`/${e.target.value}`);
-  // }
-
-
 
   showMenu(event) {
     event.preventDefault();
@@ -68,25 +63,12 @@ render () {
         </Link>
       </div>
 
-      {/* <select className="hiddenmenu"> 
-   
-    <option value="" selected="selected">Select</option> 
-    
-    <option value="/">Home</option> 
-    <option>
-
-      Projects
-
-      </option> 
-    <option>About</option> 
-    <option>Resume</option> 
-    <option>Contact</option> 
-  </select>  */}
-
 <div>
-        <button onClick={this.showMenu}>
+        {/* <button onClick={this.showMenu}>
           Show menu
-        </button>
+        </button> */}
+
+        <img src={menuIcon} onClick={this.showMenu} />
         
         {
           this.state.showMenu
