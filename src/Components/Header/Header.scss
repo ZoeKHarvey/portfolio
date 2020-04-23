@@ -97,10 +97,11 @@ $animate: all 0.2s ease-in-out;
   }
 }
 
+
+/***************    Iphone 5s    ***************/         
+
 @media screen and (max-width: 568px) {
-  .Header {
-    // align-items: center;
-  }
+
 
   .hiddenmenu {
     display: inline-block;
@@ -108,7 +109,7 @@ $animate: all 0.2s ease-in-out;
     position: absolute;
     right: 0;
 
-    // margin-top: 3%;
+    margin-top: 2%;
     margin-right: 3%;
     width: 20%;
     // box-shadow: $box-shadow1;
@@ -121,7 +122,9 @@ $animate: all 0.2s ease-in-out;
   }
 
   .header-logo {
-  //  display:none;
+    height: 6vh;
+    width: 4em;
+    padding-bottom: 12%;
   }
 
   .header-svg {
@@ -138,14 +141,12 @@ $animate: all 0.2s ease-in-out;
     }
   }
 
-  
-
-
-
-
   .Header2 {
     display: none;
   }
-
-
 }
+
+
+/**********       End of Iphone 5s       *********/
+
+

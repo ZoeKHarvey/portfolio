@@ -21,3 +21,24 @@ span {
   font-weight: bold;
 }
 
+.mobile-components {
+  display: none;
+}
+
+
+
+/**********   Iphone 5s    **********/
+
+
+@media screen and (max-width: 568px) {
+
+.mobile-components {
+  display: inline-block;
+}
+
+h1 {
+  font-size: 4em;
+}
+
+
+}

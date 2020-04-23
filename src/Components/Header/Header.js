@@ -83,6 +83,7 @@ render () {
                 <Link to="/resume">
                   <p>Resume</p>
                 </Link>
+
                 <Link to="/contact">
                   <p>Contact</p>
                 </Link>
