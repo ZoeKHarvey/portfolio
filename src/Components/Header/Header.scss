@@ -90,13 +90,25 @@ $animate: all 0.2s ease-in-out;
   display: none;
 }
 
+.header-svg {
+  filter: $svg-light-grey;
+  &:active {
+    filter: $svg-blue
+  }
+}
 
 @media screen and (max-width: 1060px) {
   .hiddenmenu {
     display: inline-block;
+    z-index: 2;
+    position: absolute;
+    right: 0;
+    margin-right: 3%;
   }
 
   .Header2 {
     display: none;
   }
+
+
 }

@@ -63,16 +63,16 @@ render () {
         </Link>
       </div>
 
-<div>
-        {/* <button onClick={this.showMenu}>
-          Show menu
-        </button> */}
 
-        <img src={menuIcon} onClick={this.showMenu} />
+
+
+<div className="hiddenmenu">
+       
+
+        <img className="header-svg" src={menuIcon} onClick={this.showMenu} />
         
         {
-          this.state.showMenu
-            ? (
+          this.state.showMenu ? (
               <div className="menu">
                 <Link to="/projects">
                   <p>Projects</p>
