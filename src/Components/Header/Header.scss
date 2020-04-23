@@ -85,3 +85,14 @@ $animate: all 0.2s ease-in-out;
     transform: scale(1.1);
   }
 }
+
+.hiddenmenu {
+  display: none;
+}
+
+
+@media screen and (max-width: 1060px) {
+  .hiddenmenu {
+    display: inline-block;
+  }
+}

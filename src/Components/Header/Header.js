@@ -31,6 +31,16 @@ const Header = () => {
           </div>
         </Link>
       </div>
+
+      <select className="hiddenmenu"> 
+    <option value="" selected="selected">Select</option> 
+    
+    <option value="/">Home</option> 
+    <option value="/collections/all">Books</option> 
+    <option value="/blogs/five-simple-steps-blog">Blog</option> 
+    <option value="/pages/about-us">About Us</option> 
+    <option value="/pages/support">Support</option> 
+  </select> 
     </div>
   );
 };
