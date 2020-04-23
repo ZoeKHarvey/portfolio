@@ -75,10 +75,18 @@ render () {
             ? (
               <div className="menu">
                 <Link to="/projects">
-                <button> Menu item 1 </button>
+                  <p>Projects</p>
                 </Link>
-                <button> Menu item 2 </button>
-                <button> Menu item 3 </button>
+                <Link to="/about">
+                  <p>About</p>
+                </Link>
+                <Link to="/resume">
+                  <p>Resume</p>
+                </Link>
+                <Link to="/contact">
+                  <p>Contact</p>
+                </Link>
+                
               </div>
             )
             : (
