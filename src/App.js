@@ -14,7 +14,7 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <Header />
+        <Header onChange={this.onChange} />
         <Route exact path='/' render = {() => <> <Home /> </>} />
         <Route exact path='/projects' render = {() => <> <Projects /> </>} />
         <Route exact path='/about' render = {() => <> <About /> </>} />

@@ -1,8 +1,44 @@
-import React from 'react';
+import React, {Component} from 'react';
 import './Header.scss';
 import {Link} from 'react-router-dom';
 
-const Header = () => {
+class Header extends Component {
+
+  constructor() {
+    super();
+    
+    this.state = {
+      showMenu: false,
+    };
+    
+    this.showMenu = this.showMenu.bind(this);
+    this.closeMenu = this.closeMenu.bind(this);
+  }
+
+  // onChange = (e) => {
+  //   this.props.history.push(`/${e.target.value}`);
+  // }
+
+
+
+  showMenu(event) {
+    event.preventDefault();
+    
+    this.setState({ showMenu: true }, () => {
+      document.addEventListener('click', this.closeMenu);
+    });
+  }
+  
+  closeMenu() {
+    this.setState({ showMenu: false }, () => {
+      document.removeEventListener('click', this.closeMenu);
+    });
+  }
+
+
+
+render () {
+
 
   return(
     <div className="Header">
@@ -32,18 +68,50 @@ const Header = () => {
         </Link>
       </div>
 
-      <select className="hiddenmenu"> 
+      {/* <select className="hiddenmenu"> 
+   
     <option value="" selected="selected">Select</option> 
     
     <option value="/">Home</option> 
-    <option value="/collections/all">Books</option> 
-    <option value="/blogs/five-simple-steps-blog">Blog</option> 
-    <option value="/pages/about-us">About Us</option> 
-    <option value="/pages/support">Support</option> 
-  </select> 
+    <option>
+
+      Projects
+
+      </option> 
+    <option>About</option> 
+    <option>Resume</option> 
+    <option>Contact</option> 
+  </select>  */}
+
+<div>
+        <button onClick={this.showMenu}>
+          Show menu
+        </button>
+        
+        {
+          this.state.showMenu
+            ? (
+              <div className="menu">
+                <Link to="/projects">
+                <button> Menu item 1 </button>
+                </Link>
+                <button> Menu item 2 </button>
+                <button> Menu item 3 </button>
+              </div>
+            )
+            : (
+              null
+            )
+        }
+      </div>
+
+
+
     </div>
   );
 };
+}
+
 
 export default Header;
 
