@@ -40,6 +40,9 @@
     cursor: pointer;
     fill: $secondary-blue;
   }
+  &:focus {
+    transform: scale(1.1)
+  }
 }
 
 .projects-div-img-next {
@@ -67,11 +70,12 @@
   z-index: 1;
   position: absolute;
   top: 0;
-  background: black;
-  color: white;
+  background: darken($background, 2%);
+  color: lighten($lighter-grey, 20%);
   height: 80%;
   padding: 8% 8%;
   line-height: 1.5;
+  border: 2px solid black;
 }
 
 .projects-div-footer > a {
