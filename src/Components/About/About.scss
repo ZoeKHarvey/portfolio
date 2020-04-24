@@ -59,3 +59,46 @@ hr {
   border-color: $darker-grey;
 }
 
+@media screen and (max-width: 568px) {
+
+  .About {
+    overflow: scroll;
+    line-height: 1.5;
+  }
+
+  .about-section-general {
+    width: 70%;
+    margin-top: 3vh;
+    // line-height: 1.5;
+  }
+
+  .about-section-tech {
+    margin-top: 0;
+  }
+
+  hr {
+    margin-top: 0;
+  }
+  
+  .about-div-dropdown{
+    display: none;
+  }
+
+  .about-ul {
+    display: flex;
+    flex-direction: column;
+  }
+
+  ul li::before {
+    content: "\2022     ";
+    color: $secondary-blue;
+  }
+
+  .about-li-span {
+    display: none;
+  }
+
+  .about-li {
+    margin-right: 1%;
+  }
+}
