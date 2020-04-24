@@ -42,3 +42,23 @@
   font-size: 1.5em;
 }
 
+
+
+@media screen and (max-width: 568px) {
+  .contact-p {
+    font-size: 1.2em;
+    width: 50%;
+    align-self: center;
+  }
+
+  .contact-a {
+    width: 18%;
+  }
+
+  .contact-div-second, .contact-div-normal {
+    width: 80%;
+    margin-top: 10vh;
+  }
+
+}
+

@@ -10,3 +10,10 @@
   width: 58%;
   transform: scale(.9);
 }
+
+@media screen and (max-width: 568px) {
+  .resume-iframe {
+    width: 80%;
+    // transform: scale(.4)
+  }
+}
