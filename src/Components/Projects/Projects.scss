@@ -89,3 +89,25 @@
   }
 }
 
+
+/**********     iPhone 5s     **********/
+
+@media screen and (max-width: 568px) {
+
+  .Projects {
+    display: flex;
+    overflow-y: scroll;
+    width: 100%;
+  }
+
+  .projects-div {
+    width: 80%;
+    margin-top: 4vh;
+  }
+
+  .gutenreader-div {
+    height: 87vh;
+  }
+
+}
+
