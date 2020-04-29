@@ -134,7 +134,7 @@ $animate: all 0.2s ease-in-out;
   a > div > p {
     // margin: 0;
     padding-left: 6%;
-    color: $background;
+    color: $lighter-grey;
     // background: $lighter-grey;
     // border: 1px solid red;
     // box-shadow: $box-shadow1;
@@ -143,14 +143,17 @@ $animate: all 0.2s ease-in-out;
     }
     &:active {
       transform: scale(1.1);
+      color: $secondary-blue;
     }
   }
 
   a > div {
-    background: $lighter-grey;
-    height: 9vh;
+    background: lighten($background, 6);
+    height: 7vh;
     display: flex;
     width: 12vh;
+    border-bottom: 1px solid;
+    align-items: center;
   }
 
   .Header2 {
