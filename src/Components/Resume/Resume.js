@@ -12,9 +12,9 @@ const Resume = () => {
   
     </div>
 
-<object className="resume-mobile" data={resume} type="application/pdf">
+{/* <object className="resume-mobile" data={resume} type="application/pdf">
 <embed src={resume} type="application/pdf" />
-</object>
+</object> */}
 </>
 
   );
