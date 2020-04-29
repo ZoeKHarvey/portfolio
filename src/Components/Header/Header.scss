@@ -131,14 +131,26 @@ $animate: all 0.2s ease-in-out;
     width: 50%;
   }
 
-  a > p {
-    box-shadow: $box-shadow1;
+  a > div > p {
+    // margin: 0;
+    padding-left: 6%;
+    color: $background;
+    // background: $lighter-grey;
+    // border: 1px solid red;
+    // box-shadow: $box-shadow1;
     &:hover {
       transform: scale(1.1)
     }
     &:active {
       transform: scale(1.1);
     }
+  }
+
+  a > div {
+    background: $lighter-grey;
+    height: 9vh;
+    display: flex;
+    width: 12vh;
   }
 
   .Header2 {

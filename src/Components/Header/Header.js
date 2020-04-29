@@ -75,17 +75,25 @@ render () {
           this.state.showMenu ? (
               <div className="menu">
                 <Link to="/projects">
+                  <div>
                   <p>Projects</p>
+                  </div>
                 </Link>
                 <Link to="/about">
+                  <div>
                   <p>About</p>
+                  </div>
                 </Link>
                 <Link to="/resume">
+                  <div>
                   <p>Resume</p>
+                  </div>
                 </Link>
 
                 <Link to="/contact">
+                  <div>
                   <p>Contact</p>
+                  </div>
                 </Link>
                 
               </div>
