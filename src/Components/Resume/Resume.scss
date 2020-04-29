@@ -11,9 +11,16 @@
   transform: scale(.9);
 }
 
+.resume-mobile {
+  display: none;
+}
+
 @media screen and (max-width: 568px) {
   .resume-iframe {
-    width: 80%;
-    // transform: scale(.4)
+   display: none;
+  }
+
+  .resume-mobile {
+    display: inline-block;
   }
 }

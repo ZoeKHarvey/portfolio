@@ -102,7 +102,7 @@ class About extends Component {
               },
             })}
             className ="about-dropdown"
-            value={selectedOption}
+             value={selectedOption}
             onChange={this.handleChange}
             options={options}
           />

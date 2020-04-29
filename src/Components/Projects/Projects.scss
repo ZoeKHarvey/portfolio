@@ -5,6 +5,7 @@
   flex-wrap: wrap;
   justify-content: space-evenly;
   height: 91vh;
+  margin-top: 2%;
 }
 
 .cinema-div,
@@ -18,13 +19,19 @@
 .gutenreader-div {
   display: inline-block;
   overflow: hidden;
-  width: 22%;
+  width: 23%;
   position: relative;
-  height: 80vh;
+  height: 74vh;
+
+  // display: inline-block;
+  // overflow: hidden;
+  // width: 22%;
+  // position: relative;
+  // height: 80vh;
 }
 
 .gutenpics {
-  width: 102%;
+  width: 90%;
 }
 
 .projects-div {
@@ -62,6 +69,10 @@
   box-shadow: $box-shadow1;
 }
 
+.guten-footer {
+  width: 90%
+}
+
 .cinemapics {
   height: 24vh;
 }
@@ -82,7 +93,6 @@
   font-weight: 600;
   &:hover {
     color: $secondary-blue;
-    // font-weight: 700;
   }
   &:focus {
     transform: scale(1.1)
@@ -106,7 +116,10 @@
   }
 
   .gutenreader-div {
-    height: 87vh;
+    height: 78vh;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
   }
 
   .projects-div {

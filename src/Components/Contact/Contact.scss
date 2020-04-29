@@ -31,8 +31,9 @@
 }
 
 .contact-a {
-  margin-top: 2vh;
+  // margin-top: 2vh;
   width: 8%;
+  align-self: center;
 }
 
 .contact-p {
@@ -52,7 +53,9 @@
   }
 
   .contact-a {
-    width: 18%;
+    width: 15%;
+    min-height: 5vh;
+    align-self: center;
   }
 
   .contact-div-second, .contact-div-normal {
