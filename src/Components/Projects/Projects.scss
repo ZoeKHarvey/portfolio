@@ -15,8 +15,9 @@
   flex-wrap: wrap;
   justify-content: space-evenly;
   width: 80%;
-  height: 80vh;
+  height: 64vh;
   margin-right: 2%;
+  margin-top: 3%;
 }
 
 .idea-div,
@@ -32,10 +33,10 @@
 
 .gutenreader-div {
   display: inline-block;
-  overflow: hidden;
-  width: 23%;
-  position: relative;
-  height: 71vh;
+    overflow: hidden;
+    width: 21%;
+    position: relative;
+    height: 72vh;
 
   // display: inline-block;
   // overflow: hidden;
@@ -45,7 +46,7 @@
 }
 
 .gutenpics {
-  width: 90%;
+  width: 98%;
 }
 
 .projects-div {
@@ -84,7 +85,7 @@
 }
 
 .guten-footer {
-  width: 90%
+  width: 98%
 }
 
 .cinemapics {
@@ -120,20 +121,33 @@
 
   .Projects {
     display: flex;
+    flex-direction: column;
     overflow-y: scroll;
-    width: 100%;
+    width: 96%;
+    margin-top: 2%;
+    align-items: center;
+
+  }
+
+  .projects-other {
+margin-bottom: 2vh;
+
   }
 
   .projects-div {
-    width: 80%;
-    margin-top: 4vh;
+    width: 100%;
+    margin-top: 2vh;
+    margin-bottom: 2vh;
+    flex-shrink: 0;
   }
 
   .gutenreader-div {
-    height: 78vh;
     align-items: center;
     display: flex;
     flex-direction: column;
+    margin-top: 64vh;
+    height: 81vh;
+    width: 80%;
   }
 
   .projects-div {
