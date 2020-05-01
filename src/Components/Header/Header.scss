@@ -71,15 +71,17 @@ $animate: all 0.2s ease-in-out;
 .header-logo {
   display: block;
   height: 8vh;
-  width: 6em;
-  background-image: url('../../assets/logo-grey.png');
+  width: 5em;
+  background-image: url('../../assets/logo.png');
+  // background-image: url('../../assets/logo-grey.png');
   background-repeat: no-repeat;
   background-position: center;
   background-size: 60%;
+  opacity: .7;
   &:hover {
-    opacity: .7;
-    background-image: url('../../assets/porfolio-logo-blue.png');
+    opacity: 1;
     cursor: pointer;
+    // transform: scale(1.1);
   }
   &:active {
     transform: scale(1.1);

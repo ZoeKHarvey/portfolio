@@ -2,6 +2,7 @@ import React, {Component} from 'react';
 import './Header.scss';
 import {Link} from 'react-router-dom';
 import menuIcon from '../../assets/menu-24px.svg'
+import logo from '../../assets/logo.png';
 
 class Header extends Component {
 
