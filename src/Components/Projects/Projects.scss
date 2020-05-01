@@ -2,16 +2,25 @@
 
 .Projects {
   display: flex;
-  flex-wrap: wrap;
+  // flex-wrap: wrap;
   justify-content: space-evenly;
   height: 91vh;
   margin-top: 2%;
+  width: 100%;
 }
 
+.projects-other {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  width: 80%;
+}
+
+.cycle-div,
 .cinema-div,
 .iced-div,
 .cowboy-div {
-  width: 24%;
+  width: 30%;
   height: 28vh;
   position: relative;
 }

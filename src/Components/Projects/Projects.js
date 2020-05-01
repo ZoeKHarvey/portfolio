@@ -9,6 +9,7 @@ import icedhome from '../../assets/icedhome.png';
 import cinemaHome from '../../assets/cinema-home.png';
 import cinemaLogin from '../../assets/cinema-login.png';
 import Footer from '../Footer/Footer';
+import cycleHome from '../../assets/cycle-east.png'
 
 class Projects extends Component {
   constructor() {
@@ -60,6 +61,9 @@ class Projects extends Component {
             <svg className="svg-next" onClick={ () => this.toggleImageSrc(1) } xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24"><path d="M5.88 4.12L13.76 12l-7.88 7.88L8 22l10-10L8 2z"/><path d="M0 0h24v24H0z" fill="none"/></svg>
           </div>
         </div>
+
+        <div className="projects-other">
+
         <div className="projects-div iced-div">
           <div className="icedpics">
             <CrossfadeImage src={icedhome} />
@@ -69,6 +73,17 @@ class Projects extends Component {
             <svg className="svg-next" onClick={ () => this.toggleImageSrc(3) } xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24"><path d="M5.88 4.12L13.76 12l-7.88 7.88L8 22l10-10L8 2z"/><path d="M0 0h24v24H0z" fill="none"/></svg>
           </div>
         </div>
+
+        <div className="projects-div cycle-div">
+          <div className="cycle-pics">
+            <CrossfadeImage src={cycleHome} />
+          </div>
+          <div className="projects-div-footer">
+            <a target="_blank" href=''>Github</a>
+            <svg className="svg-next"  xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24"><path d="M5.88 4.12L13.76 12l-7.88 7.88L8 22l10-10L8 2z"/><path d="M0 0h24v24H0z" fill="none"/></svg>
+          </div>
+        </div>
+
         <div className="projects-div cowboy-div">
           <div className="cowboypics">
             <CrossfadeImage src={this.state.imageSrc2} />
@@ -79,6 +94,10 @@ class Projects extends Component {
             <svg className="svg-next" onClick={ () => this.toggleImageSrc(2) } xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24"><path d="M5.88 4.12L13.76 12l-7.88 7.88L8 22l10-10L8 2z"/><path d="M0 0h24v24H0z" fill="none"/></svg>
           </div>
         </div>
+
+      
+
+
         <div className="projects-div cinema-div">
           <div className="cinemapics">
             <CrossfadeImage src={this.state.cinemaPics} />
@@ -87,6 +106,7 @@ class Projects extends Component {
             <a target="_blank" href="https://github.com/SamuelColeman/cinema-night">Github</a>
             <svg className="svg-next" onClick={ () => this.toggleImageSrc(4) } xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24"><path d="M5.88 4.12L13.76 12l-7.88 7.88L8 22l10-10L8 2z"/><path d="M0 0h24v24H0z" fill="none"/></svg>
           </div>
+        </div>
         </div>
         <Footer />
       </div>
