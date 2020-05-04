@@ -51,13 +51,13 @@ class Projects extends Component {
         <div className="projects-div gutenreader-div" style={this.state.gutenStyle}>
           <div className="gutenpics" onClick={() => this.toggleVisibility('guten')}>
             <CrossfadeImage src={this.state.imageSrc1} />
-            <p style={{visibility: this.state.gutenTextVisible}} className="projects-p-guten">
+            {/* <p style={{visibility: this.state.gutenTextVisible}} className="projects-p-guten">
               An eReader built on the Project Gutenberg API that performs sentiment analysis (with IBM Watson) to determine the mood of the current page and plays music (with Spotify) that matches that mood. <br/><br/> 
               Designed with accessibility in mind!<br/><br/>
               Built With: <br/>
               Front End - React Native / Jest / Enzyme <br/>
               Backend - Rails / Sinatra / RSpec / unittest
-              </p>
+              </p> */}
           </div>
           <div className="guten-footer projects-div-footer">
             <a target="_blank" href="https://github.com/ZoeKHarvey/guten_reader_FE">Github</a>
