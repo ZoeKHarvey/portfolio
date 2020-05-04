@@ -8,7 +8,6 @@
   bottom: 0;
   height: 10vh;
   background: $background;
-  border: 1px solid red;
 }
 
 .footer-img {
@@ -48,5 +47,13 @@
 
 }
 
-
+@media screen and (max-width: 1020px) {
+  .Footer {
+    height: 7vh;
+  }
+  a {
+    width: 3.5%;
+    height: 12vh;
+  }
+}
 

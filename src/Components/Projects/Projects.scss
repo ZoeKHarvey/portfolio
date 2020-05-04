@@ -1,20 +1,18 @@
 @import '../../util/variables';
 
 .Projects {
-  display: flex;
-  // flex-wrap: wrap;
-  justify-content: space-evenly;
+  // display: flex;
+  // justify-content: space-evenly;
   height: 91vh;
   margin-top: 2%;
   width: 100%;
   margin-left: 2%;
-
- 
 }
-.ugh {
+.projects-grid {
+  height: 100%;
   display: grid;
-  grid-template-columns: 25% 25% 25% 25%;
-  grid-template-rows: 35% 35%;
+  grid-template-columns: 20% 25% 25% 25%;
+  grid-template-rows: 40% 40%;
 }
 
 .projects-other {
@@ -22,10 +20,6 @@
   flex-wrap: wrap;
   justify-content: space-evenly;
   width: 80%;
-  // height: 64vh;
-  // margin-right: 2%;
-  // margin-top: 3%;
-
 }
 
 .iced-div {
@@ -33,62 +27,47 @@
   grid-column-end: 2;
   grid-row: 1;
   grid-row-end: 1;
+  margin: auto;
 }
 
 .cycle-div {
   grid-column: 3;
   grid-row: 1;
+  margin: auto;
 }
 
 .cinema-div {
   grid-column: 4;
   grid-row: 1;
+  margin: auto;
 }
 
 .idea-div {
   grid-column: 2;
   grid-row: 2;
+  margin: auto;
 }
 
 .cowboy-div {
   grid-column: 3;
   grid-row: 2;
+  margin: auto;
 }
 
 .swapi-div {
   grid-column: 4;
   grid-row: 2;
+  margin: auto;
 }
 
 
-// .idea-div,
-// .swapi-div,
-// .cycle-div,
-// .cinema-div,
-// .iced-div,
-// .cowboy-div {
-//   width: 100%;
-//   // height: 27vh;
-
-//   position: relative;
-// }
-
 .gutenreader-div {
   display: inline-block;
-    overflow: hidden;
-    // width: 21%;
-    position: relative;
-    height: 72vh;
-
-    grid-column-start:1;
-    grid-row-start: 1;
-    grid-row-end: 2;
-
-  // display: inline-block;
-  // overflow: hidden;
-  // width: 22%;
-  // position: relative;
-  // height: 80vh;
+  overflow: hidden;
+  position: relative;
+  grid-column-start:1;
+  grid-row: 1 / span 2;
+  margin: auto;
 }
 
 .gutenpics {
@@ -124,21 +103,9 @@
 .projects-div-footer {
   display: flex;
   justify-content: space-between;
-  // position: absolute;
   bottom:0;
   width: 100%;
   box-shadow: $box-shadow1;
-}
-
-.guten-footer {
-  width: 98%
-}
-
-.gutenpics,
-.pics {
-  // height: 24vh;
-  // position: absolute;
-  // bottom: 27px;
 }
 
 .projects-p-guten {
@@ -166,7 +133,7 @@
 
 /**********     iPhone 5s     **********/
 
-@media screen and (max-width: 568px) {
+@media screen and (max-width: 1020px) {
 
   .Projects {
     display: flex;
@@ -178,9 +145,14 @@
 
   }
 
-  .projects-other {
-margin-bottom: 2vh;
+  .projects-grid {
+    display: flex;
+    flex-direction: column;
 
+  }
+
+  .projects-div-footer {
+    height: 4vh;
   }
 
   .projects-div {
@@ -194,14 +166,13 @@ margin-bottom: 2vh;
     align-items: center;
     display: flex;
     flex-direction: column;
-    margin-top: 64vh;
-    height: 81vh;
     width: 80%;
   }
 
   .projects-div {
     opacity: 1;
   }
+
 }
 
 // @media screen and (max-width: 1199px) {

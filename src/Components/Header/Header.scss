@@ -104,14 +104,15 @@ $animate: all 0.2s ease-in-out;
 
 @media screen and (max-width: 568px) {
 
+  .Header {
+    align-items: center;
+  }
 
   .hiddenmenu {
     display: inline-block;
     z-index: 2;
     position: absolute;
     right: 0;
-
-    margin-top: 2%;
     margin-right: 3%;
     width: 20%;
     // box-shadow: $box-shadow1;
@@ -161,6 +162,10 @@ $animate: all 0.2s ease-in-out;
 
   .Header2 {
     display: none;
+  }
+
+  .Header > a {
+    height: 7vh;
   }
 }
 

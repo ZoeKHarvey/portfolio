@@ -46,8 +46,8 @@ class Projects extends Component {
 
     return(
       <div className="Projects">
-        <div className="ugh">
-          
+        <div className="projects-grid">
+
         <div className="projects-div gutenreader-div" style={this.state.gutenStyle}>
           <div className="gutenpics" onClick={() => this.toggleVisibility('guten')}>
             <CrossfadeImage src={this.state.imageSrc1} />
@@ -65,9 +65,6 @@ class Projects extends Component {
             <svg className="svg-next" onClick={ () => this.toggleImageSrc(1) } xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24"><path d="M5.88 4.12L13.76 12l-7.88 7.88L8 22l10-10L8 2z"/><path d="M0 0h24v24H0z" fill="none"/></svg>
           </div>
         </div>
-
-        {/* <div className="projects-other"> */}
-
         <div className="projects-div iced-div">
           <div className="pics">
             <CrossfadeImage src={icedhome} />
@@ -131,7 +128,6 @@ class Projects extends Component {
           </div>
         </div>
         
-        {/* </div> */}
         </div>
         <Footer />
       </div>
