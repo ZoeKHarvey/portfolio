@@ -46,6 +46,8 @@ class Projects extends Component {
 
     return(
       <div className="Projects">
+        <div className="ugh">
+          
         <div className="projects-div gutenreader-div" style={this.state.gutenStyle}>
           <div className="gutenpics" onClick={() => this.toggleVisibility('guten')}>
             <CrossfadeImage src={this.state.imageSrc1} />
@@ -64,7 +66,7 @@ class Projects extends Component {
           </div>
         </div>
 
-        <div className="projects-other">
+        {/* <div className="projects-other"> */}
 
         <div className="projects-div iced-div">
           <div className="pics">
@@ -129,6 +131,7 @@ class Projects extends Component {
           </div>
         </div>
         
+        {/* </div> */}
         </div>
         <Footer />
       </div>

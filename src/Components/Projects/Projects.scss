@@ -8,6 +8,13 @@
   margin-top: 2%;
   width: 100%;
   margin-left: 2%;
+
+ 
+}
+.ugh {
+  display: grid;
+  grid-template-columns: 25% 25% 25% 25%;
+  grid-template-rows: 35% 35%;
 }
 
 .projects-other {
@@ -18,29 +25,64 @@
   // height: 64vh;
   // margin-right: 2%;
   // margin-top: 3%;
-  display: inline-grid;
-  grid-template-columns: 30% 30% 30%;
-  grid-template-rows: 30% 30%;
+
 }
 
-.idea-div,
-.swapi-div,
-.cycle-div,
-.cinema-div,
-.iced-div,
+.iced-div {
+  grid-column: 2;
+  grid-column-end: 2;
+  grid-row: 1;
+  grid-row-end: 1;
+}
+
+.cycle-div {
+  grid-column: 3;
+  grid-row: 1;
+}
+
+.cinema-div {
+  grid-column: 4;
+  grid-row: 1;
+}
+
+.idea-div {
+  grid-column: 2;
+  grid-row: 2;
+}
+
 .cowboy-div {
-  width: 80%;
-  // height: 27vh;
-
-  position: relative;
+  grid-column: 3;
+  grid-row: 2;
 }
+
+.swapi-div {
+  grid-column: 4;
+  grid-row: 2;
+}
+
+
+// .idea-div,
+// .swapi-div,
+// .cycle-div,
+// .cinema-div,
+// .iced-div,
+// .cowboy-div {
+//   width: 100%;
+//   // height: 27vh;
+
+//   position: relative;
+// }
 
 .gutenreader-div {
   display: inline-block;
     overflow: hidden;
-    width: 21%;
+    // width: 21%;
     position: relative;
     height: 72vh;
+
+    grid-column-start:1;
+    grid-row-start: 1;
+    grid-row-end: 2;
 
   // display: inline-block;
   // overflow: hidden;
@@ -82,7 +124,7 @@
 .projects-div-footer {
   display: flex;
   justify-content: space-between;
-  position: absolute;
+  // position: absolute;
   bottom:0;
   width: 100%;
   box-shadow: $box-shadow1;
@@ -95,8 +137,8 @@
 .gutenpics,
 .pics {
   // height: 24vh;
-  position: absolute;
-  bottom: 27px;
+  // position: absolute;
+  // bottom: 27px;
 }
 
 .projects-p-guten {
