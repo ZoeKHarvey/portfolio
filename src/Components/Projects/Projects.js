@@ -67,7 +67,7 @@ class Projects extends Component {
         <div className="projects-other">
 
         <div className="projects-div iced-div">
-          <div className="icedpics">
+          <div className="pics">
             <CrossfadeImage src={icedhome} />
           </div>
           <div className="projects-div-footer">
@@ -77,7 +77,7 @@ class Projects extends Component {
         </div>
 
         <div className="projects-div cycle-div">
-          <div className="cycle-pics">
+          <div className="pics">
             <CrossfadeImage src={cycleHome} />
           </div>
           <div className="projects-div-footer">
@@ -87,7 +87,7 @@ class Projects extends Component {
         </div>
 
         <div className="projects-div cowboy-div">
-          <div className="cowboypics">
+          <div className="pics">
             <CrossfadeImage src={this.state.imageSrc2} />
           </div>
           <div className="projects-div-footer">
@@ -99,7 +99,7 @@ class Projects extends Component {
 
       
         <div className="projects-div swapi-div">
-          <div className="swapi-pics">
+          <div className="pics">
             <CrossfadeImage src={swapiHome} />
           </div>
           <div className="projects-div-footer">
@@ -109,7 +109,7 @@ class Projects extends Component {
         </div>
 
         <div className="projects-div cinema-div">
-          <div className="cinemapics">
+          <div className="pics">
             <CrossfadeImage src={this.state.cinemaPics} />
           </div>
           <div className="projects-div-footer">
@@ -120,7 +120,7 @@ class Projects extends Component {
 
 
         <div className="projects-div idea-div">
-          <div className="ideapics">
+          <div className="pics">
             <CrossfadeImage src={ideaBox} />
           </div>
           <div className="projects-div-footer">

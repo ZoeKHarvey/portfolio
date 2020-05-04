@@ -15,9 +15,12 @@
   flex-wrap: wrap;
   justify-content: space-evenly;
   width: 80%;
-  height: 64vh;
-  margin-right: 2%;
-  margin-top: 3%;
+  // height: 64vh;
+  // margin-right: 2%;
+  // margin-top: 3%;
+  display: inline-grid;
+  grid-template-columns: 30% 30% 30%;
+  grid-template-rows: 30% 30%;
 }
 
 .idea-div,
@@ -26,8 +29,9 @@
 .cinema-div,
 .iced-div,
 .cowboy-div {
-  width: 30%;
-  height: 27vh;
+  width: 80%;
+  // height: 27vh;
+
   position: relative;
 }
 
@@ -88,8 +92,11 @@
   width: 98%
 }
 
-.cinemapics {
-  height: 24vh;
+.gutenpics,
+.pics {
+  // height: 24vh;
+  position: absolute;
+  bottom: 27px;
 }
 
 .projects-p-guten {
