@@ -33,21 +33,9 @@ class About extends Component {
   };
 
   renderSort = option => {
-    console.log('option', option)
     let newT = technologies.filter(tech => tech.name.toLowerCase().includes(option))
-    console.log('new tech', newT)
     this.setState({renderedList:newT})
   }
-
-  showDetails = (tech) => {
-    this.setState({currentTech: tech})
-    let related = tech.related.map(t => {
-      return <p>{t}</p>
-    });
-    this.setState({
-      details : related
-    });
-  };
 
 
   render() {
@@ -55,15 +43,15 @@ class About extends Component {
     let mappedTechNames = technologies.map(tech => {
       return <>
         <li className="about-li" >
-          {tech.name} 
+        {tech.name} 
         </li>
-        <span className="about-li-span">/</span>
+        {/* <span className="about-li-span">.</span> */}
       </> 
   });
     let mappedOptionTech = this.state.renderedList.map(tech => {
       return <>
         <li className="about-li">{tech.name}</li>
-        <span className="about-li-span">/</span>
+        <span className="about-li-span">.</span>
         </>
   });
 
@@ -77,19 +65,19 @@ class About extends Component {
       </section>  
       <hr/>   
       <section className="about-section-tech">
-
+      <div className="about-div-dropdown">
+          <input type="text" onChange={this.handleChange} value={selectedOption} />
+          <ul className="about-ul">
+            {mappedOptionTech}
+          </ul>
+        </div>
 
         <div className="about-div-techlist">
           <ul className="about-ul">
             {mappedTechNames}
           </ul>
         </div>
-        <div className="about-div-dropdown">
-          <input type="text" onChange={this.handleChange} value={selectedOption} />
-          <ul className="about-ul">
-            {mappedOptionTech}
-          </ul>
-        </div>
+        
       </section>
       <Footer />
     </div>
