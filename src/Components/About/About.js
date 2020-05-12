@@ -20,32 +20,43 @@ class About extends Component {
   constructor() {
     super()
     this.state = {
-      selectedOption: null,
+      selectedOption: '',
       renderedList: [],
       details: '',
       currentTech: ''
     };
   };
 
-  handleChange = selectedOption => {
-    console.log(selectedOption)
-    this.setState(
-      { selectedOption },
-      () => console.log(`Option selected:`, this.state.selectedOption)
-    );
-    this.renderSort(selectedOption.value)
+  handleChange = (event, selectedOption) => {
+    this.setState({selectedOption: event.target.value});
+
+    // this.setState(
+    //   { selectedOption },
+    //   () => console.log(`Option selected:`, this.state.selectedOption)
+    // );
+console.log('option in handle change', this.state.selectedOption)
+    this.renderSort(this.state.selectedOption)
   };
 
-  renderSort = (option) => {
-    if(option === "alph") {
-      technologies.sort(function(a, b) {
-        return (a.name < b.name) ? -1 : (a.name > b.name) ? 1 : 0;
-      }); 
-    } else {
-      let newT = technologies.filter(tech => tech.category === option)
-      this.setState({ renderedList : newT })
-    };
-  };
+  // renderSort = (option) => {
+  //   if(option === "alph") {
+  //     technologies.sort(function(a, b) {
+  //       return (a.name < b.name) ? -1 : (a.name > b.name) ? 1 : 0;
+  //     }); 
+  //   } else {
+  //     let newT = technologies.filter(tech => tech.category === option)
+  //     this.setState({ renderedList : newT })
+  //   };
+  // };
+
+  renderSort = option => {
+    console.log('option', option)
+    let newT = technologies.filter(tech => tech.name.includes(option))
+    console.log('new tech', newT)
+    this.setState({renderedList:newT})
+  }
+
+  
 
   showDetails = (tech) => {
     this.setState({currentTech: tech})
@@ -90,7 +101,7 @@ class About extends Component {
           </ul>
         </div>
         <div className="about-div-dropdown">
-          <Select
+          {/* <Select
             theme={(theme) => ({
               ...theme,
               borderRadius: 0,
@@ -105,7 +116,8 @@ class About extends Component {
              value={selectedOption}
             onChange={this.handleChange}
             options={options}
-          />
+          /> */}
+          <input type="text" onChange={this.handleChange} value={selectedOption} />
           <ul className="about-ul">
             {mappedOptionTech}
           </ul>
