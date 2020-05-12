@@ -23,31 +23,14 @@ class About extends Component {
       selectedOption: '',
       renderedList: [],
       details: '',
-      currentTech: ''
+      currentTech: '',
     };
   };
 
-  handleChange = (event, selectedOption) => {
+  handleChange = (event) => {
     this.setState({selectedOption: event.target.value.toLowerCase()});
-
-    // this.setState(
-    //   { selectedOption },
-    //   () => console.log(`Option selected:`, this.state.selectedOption)
-    // );
-console.log('option in handle change', this.state.selectedOption)
     this.renderSort(this.state.selectedOption)
   };
-
-  // renderSort = (option) => {
-  //   if(option === "alph") {
-  //     technologies.sort(function(a, b) {
-  //       return (a.name < b.name) ? -1 : (a.name > b.name) ? 1 : 0;
-  //     }); 
-  //   } else {
-  //     let newT = technologies.filter(tech => tech.category === option)
-  //     this.setState({ renderedList : newT })
-  //   };
-  // };
 
   renderSort = option => {
     console.log('option', option)
@@ -55,8 +38,6 @@ console.log('option in handle change', this.state.selectedOption)
     console.log('new tech', newT)
     this.setState({renderedList:newT})
   }
-
-  
 
   showDetails = (tech) => {
     this.setState({currentTech: tech})
@@ -67,6 +48,7 @@ console.log('option in handle change', this.state.selectedOption)
       details : related
     });
   };
+
 
   render() {
     const { selectedOption } = this.state;
@@ -95,28 +77,14 @@ console.log('option in handle change', this.state.selectedOption)
       </section>  
       <hr/>   
       <section className="about-section-tech">
+
+
         <div className="about-div-techlist">
           <ul className="about-ul">
             {mappedTechNames}
           </ul>
         </div>
         <div className="about-div-dropdown">
-          {/* <Select
-            theme={(theme) => ({
-              ...theme,
-              borderRadius: 0,
-              colors: {
-                ...theme.colors,
-                text: 'orangered',
-                primary25: '#87ffff',
-                primary: 'black',
-              },
-            })}
-            className ="about-dropdown"
-             value={selectedOption}
-            onChange={this.handleChange}
-            options={options}
-          /> */}
           <input type="text" onChange={this.handleChange} value={selectedOption} />
           <ul className="about-ul">
             {mappedOptionTech}
