@@ -28,7 +28,7 @@ class About extends Component {
   };
 
   handleChange = (event, selectedOption) => {
-    this.setState({selectedOption: event.target.value});
+    this.setState({selectedOption: event.target.value.toLowerCase()});
 
     // this.setState(
     //   { selectedOption },
@@ -51,7 +51,7 @@ console.log('option in handle change', this.state.selectedOption)
 
   renderSort = option => {
     console.log('option', option)
-    let newT = technologies.filter(tech => tech.name.includes(option))
+    let newT = technologies.filter(tech => tech.name.toLowerCase().includes(option))
     console.log('new tech', newT)
     this.setState({renderedList:newT})
   }
