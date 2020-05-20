@@ -54,7 +54,7 @@ class About extends Component {
         and React Native, learning new technologies has been at the forefront of what drives me.
       </p>
  
-      <Popup trigger={<button>See Full List of Tech Used</button>} position="right center">
+      <Popup trigger={<button className="popup-button">See Full List of Tech Used</button>} position="right center">
     <div className="about-div-techlist">
          <ul className="about-ul">
          {mappedTechNames}
