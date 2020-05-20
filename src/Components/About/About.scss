@@ -21,10 +21,6 @@
   color: $secondary-blue;
 }
 
-// ul li::before {
-//   content: "\2022     ";
-//   color: $secondary-blue;
-// }
 
 .about-li {
   color: $lighter-grey;
@@ -52,10 +48,11 @@
 
 .about-section-tech {
   display: flex;
+  flex-direction: column;
   width: 70%;
   font-size: 1.2em;
   margin-top: 2vh;
-  justify-content: space-around;
+  align-items: center;
 }
 
 .about-p {

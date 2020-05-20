@@ -51,7 +51,6 @@ class About extends Component {
     let mappedOptionTech = this.state.renderedList.map(tech => {
       return <>
         <li className="about-li">{tech.name}</li>
-        <span className="about-li-span">.</span>
         </>
   });
 
@@ -62,19 +61,20 @@ class About extends Component {
         <p className="about-p">From managing high-paced bars to learning new tech stacks on the fly, 
         I've learned a lot about solving problems efficiently, cooperatively and under pressure while 
         constantly keeping the end-user's experience and needs in the forefront of each decision.</p>
-      </section>  
       <hr/>   
-      <section className="about-section-tech">
-      <div className="about-div-dropdown">
-          <input type="text" onChange={this.handleChange} value={selectedOption} />
-          <ul className="about-ul">
-            {mappedOptionTech}
-          </ul>
-        </div>
+      <p>With a deep understanding of the quirky world of JavaScript, I've enjoyed mastering frameworks and libraries to 
+        that helps improve productivity of the developer along with performance of the product. From Node and Vue to Electron 
+        and React Native, learning new technologies has been at the forefront of what drives me.
+      </p>
+      <p>See full list of technologies</p>
+      </section>  
 
-        <div className="about-div-techlist">
-          <ul className="about-ul">
-            {mappedTechNames}
+      <section className="about-section-tech">
+          <p>Technologies</p>
+          
+         <div className="about-div-techlist">
+         <ul className="about-ul">
+         {mappedTechNames}
           </ul>
         </div>
         
@@ -85,3 +85,5 @@ class About extends Component {
 };
 
 export default About;
+
+// change mapped tech names to state to have search narrow, add submit button for search so frameworks can be filtered
