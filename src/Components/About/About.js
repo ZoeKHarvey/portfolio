@@ -4,6 +4,7 @@ import Footer from '../Footer/Footer';
 import 'react-dropdown/style.css';
 import Select from 'react-select';
 import {technologies} from '../../util/technologies';
+import Popup from "reactjs-popup";
 
 
 const options = [
@@ -67,6 +68,9 @@ class About extends Component {
         and React Native, learning new technologies has been at the forefront of what drives me.
       </p>
       <p>See full list of technologies</p>
+      <Popup trigger={<button> Trigger</button>} position="right center">
+    <div>Popup content here !!</div>
+  </Popup>
       </section>  
 
       <section className="about-section-tech">
