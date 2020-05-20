@@ -43,8 +43,21 @@
 }
 
 .about-div-techlist {
-  width: 34%;
+  // background-color: $darker-grey;
 }
+
+.test > div > div {
+  background-color: pink;
+}
+
+.popup-content {
+  background-color: red !important;
+  // opacity: .1;
+  padding: 0;
+}
+
+
+
 
 .about-section-tech {
   display: flex;

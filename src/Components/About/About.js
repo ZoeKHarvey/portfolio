@@ -6,17 +6,6 @@ import Select from 'react-select';
 import {technologies} from '../../util/technologies';
 import Popup from "reactjs-popup";
 
-
-const options = [
-  { value: 'alph', label: 'A to Z' },
-  { value: 'frameworks', label: 'Frameworks' },
-  { value: 'languages', label: 'Languages' },
-  { value: 'libraries', label: 'Libraries' },
-  { value: 'tdd', label: 'Test Driven Development' },
-  { value: 'server-side', label: 'Server-Side' },
-  { value: 'version control', label: 'Version Control'}
-];
-
 class About extends Component {
   constructor() {
     super()
@@ -37,6 +26,8 @@ class About extends Component {
     let newT = technologies.filter(tech => tech.name.toLowerCase().includes(option))
     this.setState({renderedList:newT})
   }
+
+  
 
 
   render() {
@@ -67,22 +58,65 @@ class About extends Component {
         that helps improve productivity of the developer along with performance of the product. From Node and Vue to Electron 
         and React Native, learning new technologies has been at the forefront of what drives me.
       </p>
-      <p>See full list of technologies</p>
-      <Popup trigger={<button> Trigger</button>} position="right center">
-    <div>Popup content here !!</div>
-  </Popup>
-      </section>  
-
-      <section className="about-section-tech">
-          <p>Technologies</p>
-          
-         <div className="about-div-techlist">
+    <div className="test">
+      <Popup trigger={<button>See Full List of Tech Used</button>} position="right center">
+    <div className="about-div-techlist">
          <ul className="about-ul">
          {mappedTechNames}
           </ul>
         </div>
-        
-      </section>
+  </Popup>
+  </div>
+
+
+  <Popup trigger={<button className="button"> Open Modal </button>} modal>
+    {close => (
+      <div className="modal">
+        <a className="close" onClick={close}>
+          &times;
+        </a>
+        <div className="header"> Modal Title </div>
+        <div className="content">
+          {" "}
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque, a nostrum.
+          Dolorem, repellat quidem ut, minima sint vel eveniet quibusdam voluptates
+          delectus doloremque, explicabo tempore dicta adipisci fugit amet dignissimos?
+          <br />
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur sit
+          commodi beatae optio voluptatum sed eius cumque, delectus saepe repudiandae
+          explicabo nemo nam libero ad, doloribus, voluptas rem alias. Vitae?
+        </div>
+        <div className="actions">
+          <Popup
+            trigger={<button className="button"> Trigger </button>}
+            position="top center"
+            closeOnDocumentClick
+          >
+            <span>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae
+              magni omnis delectus nemo, maxime molestiae dolorem numquam
+              mollitia, voluptate ea, accusamus excepturi deleniti ratione
+              sapiente! Laudantium, aperiam doloribus. Odit, aut.
+            </span>
+          </Popup>
+          <button
+            className="button"
+            onClick={() => {
+              console.log("modal closed ");
+              close();
+            }}
+          >
+            close modal
+          </button>
+        </div>
+      </div>
+    )}
+  </Popup>
+
+
+
+
+      </section>  
       <Footer />
     </div>
   )};
