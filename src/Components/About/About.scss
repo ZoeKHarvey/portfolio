@@ -9,18 +9,21 @@
 
 .about-ul {
   list-style: none;
-  font-size: .8em;
+  font-size: 1em;
   display: flex;
   flex-direction: column;
+  overflow: scroll;
   flex-wrap: wrap;
   height: 30vh;
+  padding-left: 5%;
+  padding-right: 5%;
+  width: 100%;
 }
 
 .about-li::before {
   content: "\2022     ";
   color: $secondary-blue;
 }
-
 
 .about-li {
   color: $lighter-grey;
@@ -33,44 +36,16 @@
   width: 40%;
 }
 
-.about-dropdown {
-  font-size: .8em;
-  background-color: $darker-grey;
-}
-
-.about-div-dropdown {
- width: 50%;
-}
-
-.about-div-techlist {
-  // background-color: $darker-grey;
-}
-
-.test > div > div {
-  background-color: pink;
-}
-
 .popup-content {
-  background-color: red !important;
-  // opacity: .1;
-  padding: 0;
+  background-color: darken($background, 2) !important;
+  // width: 30% !important;
+  padding: 2% !important;
 }
 
 
-
-
-.about-section-tech {
-  display: flex;
-  flex-direction: column;
-  width: 70%;
-  font-size: 1.2em;
-  margin-top: 2vh;
-  align-items: center;
-}
-
-.about-p {
+.about-section-general > p {
   color: $lighter-grey;
-  font-weight: 300;
+  font-weight: 400;
 }
 
 hr {
@@ -80,13 +55,10 @@ hr {
 }
 
 
-.about-div-dropdown > input {
-  color: $secondary-blue;
-  background-color: $background;
-  border: 2px solid $darker-grey;
-  height: 2vh;
-
+.popup-button {
+  color: $darker-grey;
 }
+
 
 @media screen and (max-width: 568px) {
 
