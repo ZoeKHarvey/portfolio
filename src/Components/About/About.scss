@@ -32,8 +32,12 @@
 }
 
 .about-section-general {
-  padding-top: 3%;
+  margin-top: 8vh;
   width: 40%;
+}
+
+.about-first{
+  font-size: 1.2em !important;
 }
 
 .popup-content {
@@ -46,15 +50,18 @@
 .about-section-general > p {
   color: $lighter-grey;
   font-weight: 400;
+  font-size: 1.1em;
 }
 
 hr {
   width: 80%;
-  margin-top: 15vh;
+  margin-top: 7vh;
+  margin-bottom: 7vh; 
   border-color: $darker-grey;
 }
 
 .popup-button {
+
   box-sizing: border-box;
   appearance: none;
   background-color: transparent;
@@ -64,11 +71,11 @@ hr {
   cursor: pointer;
   display: flex;
   align-self: center;
-  font-size: 1rem;
+  font-size: .8em;
   font-weight: 400;
   line-height: 1;
-  margin: 20px;
-  padding: 1.2em 2.8em;
+  margin-top: 4vh;
+  padding: 1em 2em;
   text-decoration: none;
   text-align: center;
   text-transform: uppercase;
@@ -95,7 +102,11 @@ hr {
 
 
 
-
+@media screen and (max-width: 965px) {
+.about-section-general {
+  width: 65%
+}
+}
 
 
 
