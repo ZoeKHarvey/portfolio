@@ -119,9 +119,10 @@ $animate: all 0.2s ease-in-out;
 
   .hiddenmenu {
     display: inline-block;
-    z-index: 2;
     position: absolute;
+    z-index: 2;
     right: 0;
+    top: 2vh;
     margin-right: 3%;
     width: 20%;
     // box-shadow: $box-shadow1;
@@ -129,12 +130,10 @@ $animate: all 0.2s ease-in-out;
     flex-direction: column;
     background-color: $background;
     align-items:center;
-
-    // border: 1px solid pink;
   }
 
   .menu {
-   margin-top: 16vh;
+  //  margin-top: 16vh;
   }
 
   .header-logo {
