@@ -7,6 +7,8 @@
   box-shadow: $box-shadow1;
   color: $darker-grey;
   padding-left: 2%;
+  height: 10vh;
+  align-items: center;
 }
 
 .Header2 {
@@ -30,7 +32,7 @@ $animate: all 0.2s ease-in-out;
   align-items: center;
   margin: 18px 0 20px;
   .header-tab {
-    font-size: 1.2em;
+    font-size: 1.4em;
     text-align: center;
     margin: 0 auto;
     padding: 0;
