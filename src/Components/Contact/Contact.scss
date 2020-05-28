@@ -23,7 +23,7 @@
 
 .contact-svg {
   filter: $svg-light-grey;
-  width: 100%;
+  width: 48%;
   &:hover {
     filter: $svg-blue;
     transform: scale(1.2);
@@ -32,8 +32,9 @@
 
 .contact-a {
   // margin-top: 2vh;
-  width: 8%;
+  width: 20%;
   align-self: center;
+  height: auto;
 }
 
 .contact-p {
@@ -53,15 +54,18 @@
   }
 
   .contact-a {
-    width: 15%;
-    min-height: 5vh;
+    width: 20%;
     align-self: center;
   }
 
-  .contact-div-second, .contact-div-normal {
-    width: 80%;
-    margin-top: 10vh;
+  .contact-svg {
+    width: 70%;
   }
+
+  // .contact-div-second, .contact-div-normal {
+  //   width: 80%;
+  //   margin-top: 10vh;
+  // }
 
 }
 
