@@ -44,7 +44,7 @@ render () {
       <div className="Header2">
         <Link to='/projects'>
           <div className="header">
-            <p className="header-tab">Projects & Portfolio</p>
+            <p className="header-tab">Projects</p>
           </div>
         </Link>
         <Link to='/about'>
