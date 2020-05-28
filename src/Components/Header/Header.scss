@@ -132,8 +132,14 @@ $animate: all 0.2s ease-in-out;
     align-items:center;
   }
 
+  .menu > a {
+  position: relative;
+  z-index: 2;
+  }
+
   .menu {
-  //  margin-top: 16vh;
+    position: relative;
+    z-index: 2
   }
 
   .header-logo {
