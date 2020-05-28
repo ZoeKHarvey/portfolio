@@ -71,7 +71,7 @@ class Projects extends Component {
           </div>
           <div className="projects-div-footer">
             <a target="_blank" href="https://github.com/ZoeKHarvey/stats-on-stats">Github</a>
-            <svg className="svg-next" onClick={ () => this.toggleImageSrc(3) } xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24"><path d="M5.88 4.12L13.76 12l-7.88 7.88L8 22l10-10L8 2z"/><path d="M0 0h24v24H0z" fill="none"/></svg>
+            {/* <svg className="svg-next" onClick={ () => this.toggleImageSrc(3) } xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24"><path d="M5.88 4.12L13.76 12l-7.88 7.88L8 22l10-10L8 2z"/><path d="M0 0h24v24H0z" fill="none"/></svg> */}
           </div>
         </div>
 
@@ -81,7 +81,7 @@ class Projects extends Component {
           </div>
           <div className="projects-div-footer">
             <a target="_blank" href=''>Github</a>
-            <svg className="svg-next"  xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24"><path d="M5.88 4.12L13.76 12l-7.88 7.88L8 22l10-10L8 2z"/><path d="M0 0h24v24H0z" fill="none"/></svg>
+            {/* <svg className="svg-next"  xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24"><path d="M5.88 4.12L13.76 12l-7.88 7.88L8 22l10-10L8 2z"/><path d="M0 0h24v24H0z" fill="none"/></svg> */}
           </div>
         </div>
 
@@ -103,7 +103,7 @@ class Projects extends Component {
           </div>
           <div className="projects-div-footer">
             <a target="_blank" href="https://github.com/ZoeKHarvey/swapi-box">Github</a>
-            <svg className="svg-next" xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24"><path d="M5.88 4.12L13.76 12l-7.88 7.88L8 22l10-10L8 2z"/><path d="M0 0h24v24H0z" fill="none"/></svg>
+            {/* <svg className="svg-next" xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24"><path d="M5.88 4.12L13.76 12l-7.88 7.88L8 22l10-10L8 2z"/><path d="M0 0h24v24H0z" fill="none"/></svg> */}
           </div>
         </div>
 
@@ -124,7 +124,7 @@ class Projects extends Component {
           </div>
           <div className="projects-div-footer">
             <a target="_blank" href="https://github.com/ZoeKHarvey/Idea-Box">Github</a>
-            <svg className="svg-next" xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24"><path d="M5.88 4.12L13.76 12l-7.88 7.88L8 22l10-10L8 2z"/><path d="M0 0h24v24H0z" fill="none"/></svg>
+            {/* <svg className="svg-next" xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24"><path d="M5.88 4.12L13.76 12l-7.88 7.88L8 22l10-10L8 2z"/><path d="M0 0h24v24H0z" fill="none"/></svg> */}
           </div>
         </div>
         

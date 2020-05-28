@@ -44,10 +44,11 @@ class About extends Component {
   return(
     <div className="About">
       <section className="about-section-general">
-        <p className="about-first">Striving for <span>simple answers</span> to <span>complex issues</span>.</p>
+        <p className="about-first">Striving for <span>creative answers</span> to <span>complex issues</span>.</p>
         <p>From managing high-paced bars to learning new tech stacks on the fly, 
-        I've learned a lot about solving problems efficiently, cooperatively and under pressure while 
-        constantly keeping the end-user's experience and needs in the forefront of each decision.</p>
+        I've conquered solving problems efficiently, cooperatively, and under pressure.
+        While keeping the end-user's experience and needs in the forefront of each decision, I've enjoyed delivering
+        products within strict limitations without sacrificing its quality.</p>
       <hr/>   
       <Popup trigger={<button className="popup-button">Tech Used</button>} position="right center">
     <div className="about-div-techlist">
@@ -56,13 +57,10 @@ class About extends Component {
           </ul>
         </div>
     </Popup>
-      <p>With a deep understanding of the quirky world of JavaScript, I've enjoyed mastering frameworks and libraries to 
-        that helps improve productivity of the developer along with performance of the product. From Node and Vue to Electron 
-        and React Native, learning new technologies has been at the forefront of what drives me.
+      <p>With a deep understanding of the quirky world of JavaScript, I've enjoyed mastering frameworks and libraries that
+        help improve developer productivity as well as product performance. From Electron to React Native,
+        learning new technologies has been at the forefront of what drives me.
       </p>
- 
-  
-
 
       </section>  
       <Footer />
@@ -71,5 +69,3 @@ class About extends Component {
 };
 
 export default About;
-
-// change mapped tech names to state to have search narrow, add submit button for search so frameworks can be filtered
