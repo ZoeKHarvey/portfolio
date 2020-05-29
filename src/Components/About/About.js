@@ -55,21 +55,13 @@ class About extends Component {
         help improve developer productivity as well as product performance. From Electron to React Native,
         learning new technologies has been at the forefront of what drives me.
       </p>
-      <Popup trigger={<button className="popup-button popup-desktop">Tech Used</button>} position="right center">
+      <Popup trigger={<button className="popup-button popup-desktop">Tech Used</button>} position="top right">
     <div className="about-div-techlist">
          <ul className="about-ul">
          {mappedTechNames}
           </ul>
         </div>
     </Popup>
-    <Popup className="popup-mobile" trigger={<button className="popup-button popup-mobile">Tech Used</button>} position="top center">
-    <div className="about-div-techlist">
-         <ul className="about-ul">
-         {mappedTechNames}
-          </ul>
-        </div>
-    </Popup>
-
       </section>  
       <Footer />
     </div>
