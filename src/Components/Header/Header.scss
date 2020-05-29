@@ -72,9 +72,10 @@ $animate: all 0.2s ease-in-out;
 
 .header-logo {
   display: block;
-  height: 8vh;
-  width: 5em;
-  background-image: url('../../assets/logo.png');
+  height: 9vh;
+  width: 5.5em;
+  background-image: url('../../assets/icon-grey.png');
+  // background-image: url('../../assets/logo.png');
   // background-image: url('../../assets/logo-grey.png');
   background-repeat: no-repeat;
   background-position: center;
@@ -146,6 +147,7 @@ $animate: all 0.2s ease-in-out;
     height: 6vh;
     width: 4em;
     padding-bottom: 12%;
+    padding-top: 9%;
   }
 
   .header-svg {
@@ -153,12 +155,8 @@ $animate: all 0.2s ease-in-out;
   }
 
   a > div > p {
-    // margin: 0;
     padding-left: 6%;
     color: $lighter-grey;
-    // background: $lighter-grey;
-    // border: 1px solid red;
-    // box-shadow: $box-shadow1;
     font-weight: 600;
     &:hover {
       transform: scale(1.1)
