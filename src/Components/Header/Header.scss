@@ -121,7 +121,7 @@ $animate: all 0.2s ease-in-out;
   .hiddenmenu {
     display: inline-block;
     position: absolute;
-    z-index: 2;
+    z-index: 4;
     right: 0;
     top: 2vh;
     margin-right: 3%;
@@ -135,12 +135,12 @@ $animate: all 0.2s ease-in-out;
 
   .menu > a {
   position: relative;
-  z-index: 2;
+  z-index: 4;
   }
 
   .menu {
     position: relative;
-    z-index: 2
+    z-index: 4;
   }
 
   .header-logo {

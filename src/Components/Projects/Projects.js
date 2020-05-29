@@ -54,19 +54,7 @@ class Projects extends Component {
           <div className="gutenpics" onClick={() => this.toggleVisibility('guten')}>
             <CrossfadeImage src={this.state.imageSrc1} />
 
-            <Popup trigger={
-
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="black" width="18px" height="18px"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M11 7h2v2h-2zm0 4h2v6h-2zm1-9C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8z"/></svg>
-            }
-            position="center left"
-
-            >
-            
-            
-    <div className="about-div-techlist">
-         <p>this is about the project</p>
-        </div>
-    </Popup>
+          
 
             {/* <p style={{visibility: this.state.gutenTextVisible}} className="projects-p-guten">
               An eReader built on the Project Gutenberg API that performs sentiment analysis (with IBM Watson) to determine the mood of the current page and plays music (with Spotify) that matches that mood. <br/><br/> 
@@ -79,16 +67,36 @@ class Projects extends Component {
           <div className="guten-footer projects-div-footer">
             <a target="_blank" href="https://github.com/ZoeKHarvey/guten_reader_FE">Github</a>
             <a target="_blank" href="https://www.youtube.com/watch?v=OcsrT65ifnE">Demo</a>
+            <Popup trigger={
+              <div className="div-info">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="black" width="18px" height="18px"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M11 7h2v2h-2zm0 4h2v6h-2zm1-9C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8z"/></svg>
+              </div>}
+            position="center left">  
+              <div className="about-div-techlist">
+                <p>this is about the project</p>
+              </div>
+            </Popup>
             <svg className="svg-next" onClick={ () => this.toggleImageSrc(1) } xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24"><path d="M5.88 4.12L13.76 12l-7.88 7.88L8 22l10-10L8 2z"/><path d="M0 0h24v24H0z" fill="none"/></svg>
           </div>
         </div>
         <div className="projects-div iced-div">
           <div className="pics">
             <CrossfadeImage src={icedhome} />
+         
           </div>
+          
+
           <div className="projects-div-footer">
             <a target="_blank" href="https://github.com/ZoeKHarvey/stats-on-stats">Github</a>
-            {/* <svg className="svg-next" onClick={ () => this.toggleImageSrc(3) } xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24"><path d="M5.88 4.12L13.76 12l-7.88 7.88L8 22l10-10L8 2z"/><path d="M0 0h24v24H0z" fill="none"/></svg> */}
+            <Popup trigger={
+              <div className="div-info">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="black" width="18px" height="18px"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M11 7h2v2h-2zm0 4h2v6h-2zm1-9C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8z"/></svg>
+              </div>}
+            position="center left">  
+              <div className="about-div-techlist">
+                <p>this is about the project</p>
+              </div>  
+            </Popup>
           </div>
         </div>
 
