@@ -12,8 +12,8 @@ import cinemaLogin from '../../assets/cinema-login.png';
 import Footer from '../Footer/Footer';
 import cycleHome from '../../assets/cycle-east.png';
 import swapiHome from '../../assets/swapi-home.png';
-import ideaBox from '../../assets/idea-box.png';
-import infoLogo from '../../assets/info-black-18dp.svg'
+import techfluent from '../../assets/tech-fluent.png';
+
 
 class Projects extends Component {
   constructor() {
@@ -153,9 +153,14 @@ class Projects extends Component {
               <div className="div-info">
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#999999" width="18px" height="18px"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M11 7h2v2h-2zm0 4h2v6h-2zm1-9C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8z"/></svg>
               </div>}
-            position="center left">  
-              <div className="about-div-techlist">
-                <p>this is about the project</p>
+            position="center right">  
+              <div className="about-p">
+                <p>Star Wars fans unite! This app is built with the Star Wars Api to bring all of your favorite
+                  characters and spacecrafts together. Learn about each movie, star your favorite characters to keep
+                  them organized and more! <br/><br/>
+                  Built With: React / SASS <br/>
+                  Tested With: Jest / Enzyme
+                </p>
               </div>
             </Popup>          </div>
         </div>
@@ -170,19 +175,23 @@ class Projects extends Component {
               <div className="div-info">
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#999999" width="18px" height="18px"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M11 7h2v2h-2zm0 4h2v6h-2zm1-9C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8z"/></svg>
               </div>}
-            position="center left">  
-              <div className="about-div-techlist">
-                <p>this is about the project</p>
+            position="center right">  
+              <div className="about-p">
+                <p>Cinema Night is an app that allows users to browse the top 20 newly released 
+                  films of this year. The user is able to read the description of each film and once 
+                  logged in can add them to their favourites list <br/><br/>
+                  Built With: React/Redux <br/>
+                  Tested With: Jest / Enzyme
+                  </p>
               </div>
             </Popup>
-            <svg className="svg-next" onClick={ () => this.toggleImageSrc(4) } xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24"><path d="M5.88 4.12L13.76 12l-7.88 7.88L8 22l10-10L8 2z"/><path d="M0 0h24v24H0z" fill="none"/></svg>
           </div>
         </div>
 
 
         <div className="projects-div idea-div">
           <div className="pics">
-            <CrossfadeImage src={ideaBox} />
+            <CrossfadeImage src={techfluent} />
           </div>
           <div className="projects-div-footer">
             <a target="_blank" href="https://github.com/ZoeKHarvey/Idea-Box">Github</a>
@@ -191,10 +200,13 @@ class Projects extends Component {
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#999999" width="18px" height="18px"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M11 7h2v2h-2zm0 4h2v6h-2zm1-9C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8z"/></svg>
               </div>}
             position="center left">  
-              <div className="about-div-techlist">
-                <p>this is about the project</p>
+              <div className="about-p">
+                <p>TechFluent delivers coding classes for spanish-speaking learners. The website
+                  was designed and built focusing on minimalistic design and easy-to-navigate UI.
+                </p>
               </div>
-            </Popup>          </div>
+            </Popup>          
+            </div>
         </div>
         
         </div>
