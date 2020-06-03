@@ -46,7 +46,9 @@ class Projects extends Component {
               </div>}
             position="top right">  
               <div className="about-p">
-                <p>An eReader built on the Project Gutenberg API that performs sentiment analysis (with IBM Watson) to determine the mood of the current page and plays music (with Spotify) that matches that mood. <br/><br/> 
+                <p>
+                  <span className="info-span">GutenReader</span><br/>
+                  An eReader built on the Project Gutenberg API that performs sentiment analysis (with IBM Watson) to determine the mood of the current page and plays music (with Spotify) that matches that mood. <br/><br/> 
               Designed with accessibility in mind!<br/><br/>
               Built With: <br/>
               Front End - React Native / Jest / Enzyme <br/>
@@ -71,7 +73,9 @@ class Projects extends Component {
               </div>}
             position="top right">  
               <div className="about-p">
-                <p>Iced is built on an unofficial NHL API to deliver team and player's statistics. Star your favorite players
+                <p>
+                <span className="info-span">Iced</span><br/>
+                  Iced is built on an unofficial NHL API to deliver team and player's statistics. Star your favorite players
                   as well keep up to date on team schedules. <br/> <br/>
                   Built With: <br/>
                   React / Redux / SCSS <br/>
@@ -95,7 +99,9 @@ class Projects extends Component {
               </div>}
             position="top right">  
               <div className="about-p">
-                <p>A website built for a new local bike tour company. Worked closely with potential users
+                <p>
+                <span className="info-span">Cycle East</span><br/>
+                  A website built for a new local bike tour company. Worked closely with potential users
                   to design a pleasing UI that is targetted to pique interest and inform bikers on this unique experience. <br/> <br/>
                   Built With: React / SCSS
                 </p>
@@ -117,7 +123,9 @@ class Projects extends Component {
               </div>}
             position="top right">  
               <div className="about-p">
-                <p>Based on the popular game show Family Feud, this app allows 2 users to play along. 
+                <p>
+                <span className="info-span">Cowboys vs Aliens</span><br/>
+                  Based on the popular game show Family Feud, this app allows 2 users to play along. 
                   It keeps track of the users' scores for each unique round including a timed challenge round. <br/><br/>
                   Built With: Javascript / HTML / SASS <br/>
                   Tested With: Mocha / Chai & Spies
@@ -141,7 +149,9 @@ class Projects extends Component {
               </div>}
             position="top right">  
               <div className="about-p">
-                <p>Star Wars fans unite! This app is built with the Star Wars Api to bring all of your favorite
+                <p>
+                <span className="info-span">SWAPI Box</span><br/>
+                  Star Wars fans unite! This app is built with the Star Wars Api to bring all of your favorite
                   characters and spacecrafts together. Learn about each movie, star your favorite characters to keep
                   them organized and more! <br/><br/>
                   Built With: React / SASS <br/>
@@ -163,7 +173,9 @@ class Projects extends Component {
               </div>}
             position="top right">  
               <div className="about-p">
-                <p>Cinema Night is an app that allows users to browse the top 20 newly released 
+                <p>
+                <span className="info-span">Cinema Night</span><br/>
+                  An app that allows users to browse the top 20 newly released 
                   films of this year. The user is able to read the description of each film and once 
                   logged in can add them to their favourites list <br/><br/>
                   Built With: React/Redux <br/>
@@ -187,7 +199,9 @@ class Projects extends Component {
               </div>}
             position="top right">  
               <div className="about-p">
-                <p>TechFluent delivers coding classes for spanish-speaking learners. The website
+                <p>
+                <span className="info-span">Tech Fluent</span><br/>
+                  Tech Fluent delivers coding classes for spanish-speaking learners. The website
                   was designed and built focusing on minimalistic design and easy-to-navigate UI.
                 </p>
               </div>
