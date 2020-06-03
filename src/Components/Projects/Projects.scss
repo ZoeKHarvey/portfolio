@@ -93,13 +93,27 @@
   bottom:0;
   width: 100%;
   box-shadow: $box-shadow1;
+  height: 4vh;
+  align-items: center;
 }
 
 .projects-div-footer > a {
   font-weight: 600;
+  font-size: 1.1em;
   color: $lighter-grey;
   &:hover {
     color: $secondary-blue;
+  }
+  &:focus {
+    transform: scale(1.1)
+  }
+}
+
+.guten-info-svg,
+.div-info > svg {
+  &:hover {
+    cursor: pointer;
+    filter: $svg-blue;
   }
   &:focus {
     transform: scale(1.1)
@@ -111,8 +125,9 @@
   color: $lighter-grey;
 }
 
-.info-span {
-  color: $secondary-blue;
+
+.info-tech {
+  font-size: .8em;
 }
 
 
