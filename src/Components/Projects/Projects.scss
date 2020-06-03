@@ -8,6 +8,7 @@
   width: 100%;
   margin-left: 2%;
 }
+
 .projects-grid {
   height: 100%;
   display: grid;
@@ -136,6 +137,15 @@
   &:focus {
     transform: scale(1.1)
   }
+}
+
+.guten-info {
+  position: relative;
+  z-index: 2;
+}
+
+.about-p {
+  color: $lighter-grey;
 }
 
 

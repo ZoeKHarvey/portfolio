@@ -38,11 +38,6 @@ class Projects extends Component {
     };
   };
 
-  toggleVisibility = (id) => {
-    if(id==='guten') {
-      this.state.gutenTextVisible === 'hidden' ? this.setState({ gutenTextVisible: 'visible'}) : this.setState({ gutenTextVisible: 'hidden'})
-    };
-  };
 
   render() {
 
@@ -51,32 +46,27 @@ class Projects extends Component {
         <div className="projects-grid">
 
         <div className="projects-div gutenreader-div" style={this.state.gutenStyle}>
-          <div className="gutenpics" onClick={() => this.toggleVisibility('guten')}>
-            <CrossfadeImage src={this.state.imageSrc1} />
-
-          
-
-            {/* <p style={{visibility: this.state.gutenTextVisible}} className="projects-p-guten">
-              An eReader built on the Project Gutenberg API that performs sentiment analysis (with IBM Watson) to determine the mood of the current page and plays music (with Spotify) that matches that mood. <br/><br/> 
-              Designed with accessibility in mind!<br/><br/>
-              Built With: <br/>
-              Front End - React Native / Jest / Enzyme <br/>
-              Backend - Rails / Sinatra / RSpec / unittest
-              </p> */}
-          </div>
+          {/* <div className="gutenpics"> */}
+            <img className="gutenpics" src={this.state.imageSrc1} />
+           
+    
           <div className="guten-footer projects-div-footer">
             <a target="_blank" href="https://github.com/ZoeKHarvey/guten_reader_FE">Github</a>
             <a target="_blank" href="https://www.youtube.com/watch?v=OcsrT65ifnE">Demo</a>
             <Popup trigger={
-              <div className="div-info">
+              <div className="div-info guten-info">
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#999999" width="18px" height="18px"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M11 7h2v2h-2zm0 4h2v6h-2zm1-9C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8z"/></svg>
               </div>}
-            position="center left">  
-              <div className="about-div-techlist">
-                <p>this is about the project</p>
+            position="top right">  
+              <div className="about-p">
+                <p>An eReader built on the Project Gutenberg API that performs sentiment analysis (with IBM Watson) to determine the mood of the current page and plays music (with Spotify) that matches that mood. <br/><br/> 
+              Designed with accessibility in mind!<br/><br/>
+              Built With: <br/>
+              Front End - React Native / Jest / Enzyme <br/>
+              Backend - Rails / Sinatra / RSpec / unittest</p>
               </div>
             </Popup>
-            <svg className="svg-next" onClick={ () => this.toggleImageSrc(1) } xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24"><path d="M5.88 4.12L13.76 12l-7.88 7.88L8 22l10-10L8 2z"/><path d="M0 0h24v24H0z" fill="none"/></svg>
+            {/* <svg className="svg-next" onClick={ () => this.toggleImageSrc(1) } xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24"><path d="M5.88 4.12L13.76 12l-7.88 7.88L8 22l10-10L8 2z"/><path d="M0 0h24v24H0z" fill="none"/></svg> */}
           </div>
         </div>
         <div className="projects-div iced-div">
@@ -93,8 +83,14 @@ class Projects extends Component {
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#999999" width="18px" height="18px"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M11 7h2v2h-2zm0 4h2v6h-2zm1-9C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8z"/></svg>
               </div>}
             position="center left">  
-              <div className="about-div-techlist">
-                <p>this is about the project</p>
+              <div className="about-p">
+                <p>Iced is built on an unofficial NHL API to deliver team and player's statistics. Star your favorite players
+                  as well keep up to date on team schedules. <br/> <br/>
+                  Built With: <br/>
+                  React / Redux / SCSS <br/>
+                  Tested With: <br/>
+                  Jest / Enzyme
+                </p>
               </div>  
             </Popup>
           </div>
@@ -111,8 +107,11 @@ class Projects extends Component {
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#999999" width="18px" height="18px"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M11 7h2v2h-2zm0 4h2v6h-2zm1-9C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8z"/></svg>
               </div>}
             position="center left">  
-              <div className="about-div-techlist">
-                <p>this is about the project</p>
+              <div className="about-p">
+                <p>A website built for a new local bike tour company. Worked closely with potential users
+                  to design a pleasing UI that is targetted to pique interest and inform bikers on this unique experience. <br/> <br/>
+                  Built With: React / SCSS
+                </p>
               </div>
             </Popup>         
              </div>
@@ -130,8 +129,12 @@ class Projects extends Component {
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#999999" width="18px" height="18px"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M11 7h2v2h-2zm0 4h2v6h-2zm1-9C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8z"/></svg>
               </div>}
             position="center left">  
-              <div className="about-div-techlist">
-                <p>this is about the project</p>
+              <div className="about-p">
+                <p>Based on the popular game show Family Feud, this app allows 2 users to play along. 
+                  It keeps track of the users' scores for each unique round including a timed challenge round. <br/><br/>
+                  Built With: Javascript / HTML / SASS <br/>
+                  Tested With: Mocha / Chai & Spies
+                </p>
               </div>
             </Popup>
             <svg className="svg-next" onClick={ () => this.toggleImageSrc(2) } xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24"><path d="M5.88 4.12L13.76 12l-7.88 7.88L8 22l10-10L8 2z"/><path d="M0 0h24v24H0z" fill="none"/></svg>
