@@ -1,27 +1,27 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "5ba45610bf57078d226bcc25c456f7d8",
+    "revision": "daabdbe3512afd63c8b7a6fb3e992990",
     "url": "/portfolio/index.html"
   },
   {
-    "revision": "b10cce8ac2354102e7be",
+    "revision": "12885b4e7da6dfeb9f9f",
     "url": "/portfolio/static/css/2.ee241de9.chunk.css"
   },
   {
-    "revision": "86cb3d858ee7d9058302",
-    "url": "/portfolio/static/css/main.8ef1157a.chunk.css"
+    "revision": "b2ac3212fdf9d6db0bd2",
+    "url": "/portfolio/static/css/main.ed556e99.chunk.css"
   },
   {
-    "revision": "b10cce8ac2354102e7be",
-    "url": "/portfolio/static/js/2.d2eaa44c.chunk.js"
+    "revision": "12885b4e7da6dfeb9f9f",
+    "url": "/portfolio/static/js/2.39070e95.chunk.js"
   },
   {
     "revision": "0042ed35eedf85f73c564b78f2a06746",
-    "url": "/portfolio/static/js/2.d2eaa44c.chunk.js.LICENSE.txt"
+    "url": "/portfolio/static/js/2.39070e95.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "86cb3d858ee7d9058302",
-    "url": "/portfolio/static/js/main.85d9db90.chunk.js"
+    "revision": "b2ac3212fdf9d6db0bd2",
+    "url": "/portfolio/static/js/main.a893c5e5.chunk.js"
   },
   {
     "revision": "f619aeccc94a0d089131",
@@ -72,10 +72,6 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/portfolio/static/media/icon-grey.d631e05a.png"
   },
   {
-    "revision": "abd0655c50d48236130e11de5a7da9c6",
-    "url": "/portfolio/static/media/idea-box.abd0655c.png"
-  },
-  {
     "revision": "9e36c8fd15d6f93ed6a45f9484746e8f",
     "url": "/portfolio/static/media/linkedin.9e36c8fd.svg"
   },
@@ -98,6 +94,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "969cded346a6a2105dba0b38bd195961",
     "url": "/portfolio/static/media/swapi-home.969cded3.png"
+  },
+  {
+    "revision": "f308f967c04a53a2aa43efa5c46b04a5",
+    "url": "/portfolio/static/media/tech-fluent.f308f967.png"
   },
   {
     "revision": "2fcbac0dab93ef9aa7f76a4a450374ca",
